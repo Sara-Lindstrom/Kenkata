@@ -32,3 +32,41 @@
     --border-radius-rounded: 50%;
 
 }
+
+html, body {
+    font-family:var(--font-roboto);
+    font-weight: var(--font-weight-regular);
+    color:var(--color-theme-dark);
+}
+
+/* top menu */
+
+.top-menu {
+    background-color: var(--color-theme);
+    color:var(--color-white);
+}
+
+    .top-menu > .container {
+        display:flex;
+        justify-content:space-between;
+        align-items: center;
+        padding:10px;
+        height:100%
+    }
+
+.top-menu-links a {
+    color:var(--color-white);
+    text-decoration: none;
+    margin-right: 1.2rem; 
+}
+
+.top-menu-links a:hover {
+color:var(--color-theme-dark);
+}
+
+    .top-menu-links .social-media a {
+            margin-right:0.3rem;
+    }
+
+
+
