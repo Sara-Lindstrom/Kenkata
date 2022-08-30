@@ -27,9 +27,8 @@
     --font-size-36: 3rem;
     --font-size-60: 5rem;
 
-    --border-radius-small: 8px;
-    --border-radius-medium: 25px;
-    --border-radius-rounded: 50%;
+    --border-radius-small: 0.7rem;
+    --border-radius-meduim: 10rem;
 
 }
 
@@ -41,6 +40,11 @@ html, body {
 
 .flex {
     display:flex;
+}
+
+.btn-theme {
+    border-radius: var(--border-radius-meduim);
+    font-weight: var(--font-weight-regular);
 }
 
 /* top menu */
@@ -56,7 +60,16 @@ html, body {
         justify-content: space-between;
         padding:0.7rem;
         height:100%;
-    }    
+    }  
+    
+    .top-menu a {
+        color:var(--color-white);
+        text-decoration: none;
+    }
+    
+    .top-menu a:hover {
+        color:var(--color-theme-dark); 
+    }
 
     .top-menu .dropdown-theme button {
         background-color: var(--color-theme);
@@ -71,14 +84,6 @@ html, body {
         .top-menu .dropdown-theme .dropdown-menu {
             background-color: var(--color-theme);
             border:none;
-        }
-
-    .top-menu .dropdown-theme .dropdown-menu a {
-        color:var(--color-white);
-    }
-
-        .top-menu .dropdown-theme .dropdown-menu a:hover {
-            color:var(--color-theme-dark);
         }
 
     .top-menu .dropdown-theme .dropdown-menu .dropdown-item {
@@ -96,36 +101,74 @@ html, body {
     }
 
         .top-menu .top-menu-links a {
-            color:var(--color-white);
-            text-decoration: none;
             margin-right: 1.2rem; 
         }
-
-            .top-menu .top-menu-links a:hover {
-                color:var(--color-theme-dark);
-            }
 
                 .top-menu .top-menu-links .social-media a {
                     margin-right:0.3rem;
                 }
 
 /* logotype, my account */
-.top-main-menu .flex {
-    justify-content:space-between;
-    padding:2rem 0rem;
-}
-
-.top-main-menu .my-account a {
+.top-main-menu{
+    background-color: var(--color-white);
     color:var(--color-theme-dark);
-    text-decoration: none;
-    margin-left: 1rem;
 }
 
-    .top-main-menu .my-account a:hover {
-        color:var(--color-theme);
+    .top-main-menu .flex {
+        justify-content:space-between;
+        padding:2rem 0rem;
     }
 
+    .top-main-menu .my-account a {
+        color:var(--color-theme-dark);
+        text-decoration: none;
+        margin-left: 1rem;
+    }
 
+        .top-main-menu .my-account a:hover {
+            color:var(--color-theme);
+        }
+
+/* browser, special offers */
+.top-under-menu {
+    border-top: 0.1rem var(--color-gray-3) solid ;
+    border-bottom: 0.1rem var(--color-gray-3) solid ;
+}
+
+.top-under-menu .container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-under-menu .dropdown-theme button {
+    background-color: var(--color-theme);
+    color:var(--color-white);
+    border:none;
+    padding:0.7rem;
+}
+
+    .top-under-menu .dropdown-theme button:hover {
+        background-color: var(--color-theme);
+        color:var(--color-theme-dark);
+    }
+
+    .top-under-menu .dropdown-theme .dropdown-menu {
+        background-color: var(--color-theme);
+        border:none;
+    }
+
+    .top-under-menu .btn-theme {
+        background-color: var(--color-theme);
+        color:var(--color-white);
+        border:none;
+        height:99%;
+    }
+
+        .top-under-menu .btn-theme:hover{
+            background-color: var(--color-theme);
+            color:var(--color-theme-dark);
+        }
 
 /* responsive */
 @media (min-width:768px){
