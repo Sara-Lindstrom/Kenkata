@@ -158,6 +158,16 @@ html, body {
         border:none;
     }
 
+    .top-under-menu .dropdown-theme .dropdown-menu .dropdown-item {
+        background-color: var(--color-theme);
+        color: var(--color-white);
+    }
+
+        .top-under-menu .dropdown-theme .dropdown-menu .dropdown-item:hover {
+            background-color: var(--color-theme);
+            color: var(--color-theme-dark);
+        }
+
     .top-under-menu .btn-theme {
         background-color: var(--color-theme);
         color:var(--color-white);
