@@ -100,10 +100,6 @@ html, body {
             color: var(--color-theme-dark);
         }
 
-    .top-menu .top-menu-links .top-menu-info-links {
-        display:none;
-    }
-
         .top-menu .top-menu-links a {
             margin-right: 1.2rem; 
         }
@@ -189,14 +185,6 @@ html, body {
 @media (min-width:768px){
     .hidden-text{
         display:inline;
-    }
-
-    .top-menu > .container {
-        display:flex;
-        align-items: center;
-        justify-content: space-between;
-        padding:0.7rem;
-        height:100%;
     }
     .top-under-menu .dropdown-theme button {
         border-radius: 0;
