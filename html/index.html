@@ -15,10 +15,36 @@
     <header>
         <!-- tom menu -->
         <div class="top-menu">
+            <!-- bootstrap container for a responsive website -->
             <div class="container"> 
-                <!-- bootstrap container for a responsive website -->
-                
-                <div>Left</div>
+
+                <!-- Left side dropdown -->
+                <div class="site-settings">
+                    <div class="dropdown-theme">
+                        <div class="dropdown">
+                            <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span id="selected language">ENG</span><i class="fa-solid fa-chevron-down ms-1"></i>
+                            </button>
+                            <ul id="language-menu" class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">ENG</a></li>
+                                <li><a class="dropdown-item" href="#">SWE</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dropdown-theme">
+                        <div class="dropdown">
+                            <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span id="selected currency">EUR</span><i class="fa-solid fa-chevron-down ms-1"></i>
+                            </button>
+                            <ul id="currency-menu" class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">EUR</a></li>
+                                <li><a class="dropdown-item" href="#">SEK</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- right side links -->
                 <div class="top-menu-links">
                     <a href="#">Newsletter</a>
                     <a href="#">Contact us</a>
