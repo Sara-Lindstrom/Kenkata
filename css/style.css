@@ -42,6 +42,10 @@ html, body {
     display:flex;
 }
 
+.hidden-text {
+    display:none;
+}
+
 .btn-theme {
     border-radius: var(--border-radius-meduim);
     font-weight: var(--font-weight-regular);
@@ -145,6 +149,7 @@ html, body {
     background-color: var(--color-theme);
     color:var(--color-white);
     border:none;
+    border-radius: var(--border-radius-small);
     padding:0.7rem;
 }
 
@@ -182,6 +187,10 @@ html, body {
 
 /* responsive */
 @media (min-width:768px){
+    .hidden-text{
+        display:inline;
+    }
+
     .top-menu > .container {
         display:flex;
         align-items: center;
@@ -189,10 +198,10 @@ html, body {
         padding:0.7rem;
         height:100%;
     }
-
-    .top-menu .top-menu-links .top-menu-info-links {
-        display: inline;
+    .top-under-menu .dropdown-theme button {
+        border-radius: 0;
     }
+
 }
 
 
