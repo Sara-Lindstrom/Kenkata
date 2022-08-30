@@ -39,6 +39,10 @@ html, body {
     color:var(--color-theme-dark);
 }
 
+.flex {
+    display:flex;
+}
+
 /* top menu */
 
 .top-menu {
@@ -52,45 +56,40 @@ html, body {
         justify-content: space-between;
         padding:0.7rem;
         height:100%;
+    }    
+
+    .top-menu .dropdown-theme button {
+        background-color: var(--color-theme);
+        color:var(--color-white);
+        border:none;
     }
 
-    .top-menu .site-settings {
-        display:flex;
-    }
+        .top-menu .dropdown-theme button:hover {
+            color:var(--color-theme-dark);
+        }
 
-        .top-menu .dropdown-theme button {
+        .top-menu .dropdown-theme .dropdown-menu {
             background-color: var(--color-theme);
-            color:var(--color-white);
             border:none;
-            margin-right: 0.5rem;
         }
 
-            .top-menu .dropdown-theme button:hover {
-                color:var(--color-theme-dark);
-            }
+    .top-menu .dropdown-theme .dropdown-menu a {
+        color:var(--color-white);
+    }
 
-            .top-menu .dropdown-theme .dropdown-menu {
-                background-color: var(--color-theme);
-                border:none;
-            }
-
-        .top-menu .dropdown-theme .dropdown-menu a {
-            color:var(--color-white);
+        .top-menu .dropdown-theme .dropdown-menu a:hover {
+            color:var(--color-theme-dark);
         }
 
-            .top-menu .dropdown-theme .dropdown-menu a:hover {
-                color:var(--color-theme-dark);
-            }
+    .top-menu .dropdown-theme .dropdown-menu .dropdown-item {
+        background-color: var(--color-theme);
+        color: var(--color-white);
+    }
 
-        .top-menu .dropdown-theme .dropdown-menu .dropdown-item {
+        .top-menu .dropdown-theme .dropdown-menu .dropdown-item:hover {
             background-color: var(--color-theme);
-            color: var(--color-white);
+            color: var(--color-theme-dark);
         }
-
-            .top-menu .dropdown-theme .dropdown-menu .dropdown-item:hover {
-                background-color: var(--color-theme);
-                color: var(--color-theme-dark);
-            }
 
     .top-menu .top-menu-links .top-menu-info-links {
         display:none;
@@ -109,6 +108,23 @@ html, body {
                 .top-menu .top-menu-links .social-media a {
                     margin-right:0.3rem;
                 }
+
+/* logotype, my account */
+.top-main-menu .flex {
+    justify-content:space-between;
+    padding:2rem 0rem;
+}
+
+.top-main-menu .my-account a {
+    color:var(--color-theme-dark);
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+    .top-main-menu .my-account a:hover {
+        color:var(--color-theme);
+    }
+
 
 
 /* responsive */
