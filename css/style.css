@@ -67,7 +67,7 @@ html, body {
             color:var(--color-theme-dark); 
         }
 
-    .top-menu > .container {
+    .top-menu .container {
         display:flex;
         align-items: center;
         justify-content: space-between;
@@ -106,6 +106,7 @@ html, body {
 
                 .top-menu .top-menu-links .social-media a {
                     margin-right:0.3rem;
+                    padding-right: 0.5rem;
                 }
 
     /* logotype, my account */
@@ -117,7 +118,7 @@ html, body {
         .top-main-menu .container {
             display: flex;
             justify-content:space-between;
-            padding:2rem 1rem;
+            padding:2rem 0.7rem;
         }
 
             .top-main-menu .my-account a {
@@ -213,8 +214,7 @@ html, body {
 
             .location-bar .my-account{
                 color:var(--color-theme);
-                font-size: var(--font-size-14);
-                padding: 2rem 0;
+                padding: 0.7rem;
             }
 
 
@@ -224,8 +224,21 @@ html, body {
     .hidden-text{
         display:inline;
     }
+
+    .top-menu .container {
+        padding: none;
+    }
+
     .top-under-menu .dropdown-theme button {
         border-radius: 0;
+    }
+
+    .location-bar .container {
+        padding: none;
+    }
+
+    .location-bar .my-account{
+        padding: 2rem 0;
     }
 
 }
