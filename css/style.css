@@ -256,6 +256,7 @@ html, body {
 
 
 /* login */
+/* location bar */
     .location-bar {
         background-color: #4c526b;
         color:var(--color-white);
@@ -290,6 +291,7 @@ html, body {
                 color:var(--color-theme);
                 padding: 0.7rem;
             }
+    /* login and register */
 
 
 
