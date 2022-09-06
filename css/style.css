@@ -226,12 +226,33 @@ html, body {
 /* shopping info */
 .shopping-info .container-fluid {
     display:flex;
-    justify-content: space-evenly;
-    padding: 4rem 0;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: var(--font-size-14);
 }
 
     .shopping-info .container-fluid .info-box {
+        background:#ddf3f0;
+        margin: 0 0.3rem;
+        border-radius: var(--border-radius-small);
+        border: 1px #d6f1ee solid;
     }
+
+    .shopping-info .container-fluid .info-box:hover {
+        border: 1px var(--color-theme-dark) solid;
+    }
+
+    .shopping-info .container-fluid .info-box img {
+        height: 20px;
+    }
+
+    .shopping-info .container-fluid .info-box h4 {
+        font-weight: var(--font-weight-regular);
+        font-size: var(--font-size-14);
+        color: var(--color-theme);
+    }
+
+
 
 
 /* login */
@@ -283,10 +304,10 @@ html, body {
         padding: none;
     }
 
-        /* browser, special offers */
-        .top-under-menu .dropdown-theme button {
-            border-radius: 0;
-        }
+    /* browser, special offers */
+    .top-under-menu .dropdown-theme button {
+        border-radius: 0;
+    }
 
     /* index */
     /* main */
@@ -302,21 +323,54 @@ html, body {
             padding-top: 1rem;
         }
 
+    /* shopping info */
+    .shopping-info .container-fluid {
+        padding: 2rem 0;
+        margin-top: 1rem;
+    }
+
+    .shopping-info .container-fluid .info-box {
+        padding: 1rem;
+        margin: 0 0.7rem;
+    }
+
+    .shopping-info .container-fluid .info-box img {
+        height: 3rem;
+        margin: 0.7rem;
+    }
+
     /* login */
     /* main */
     .location-bar .container {
         padding: none;
     }
 
-    .location-bar .my-account{
-        padding: 2rem 0;
-    }
+        .location-bar .my-account{
+            padding: 2rem 0;
+        }
 
-    @media(min-width:992px) {
+@media(min-width:992px) {
         /* index */
         /* showcase */
         .showcase .container .showcase-title h1 {
             font-size: var(--font-size-60);
+        }
+
+        /* shopping info */
+        .shopping-info .container-fluid{
+            text-align: start;
+        }
+        .shopping-info .container-fluid .info-box {
+            display:grid;
+            grid-template-columns: 1fr 3fr;
+            margin: 0 0.7rem;
+        }
+
+        .shopping-info .container-fluid .info-box img {
+            height: 3rem;
+            padding-right: 0.7rem;
+            grid-row: span 2;
+            align-self: center;
         }
     }
 }
