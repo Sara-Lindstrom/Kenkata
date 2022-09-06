@@ -191,6 +191,7 @@ html, body {
     .showcase .container {
         display:flex;
         align-items: center;
+        justify-content: center;
         text-align: center;
     }
 
@@ -271,22 +272,23 @@ html, body {
         padding: none;
     }
 
-    /* browser, special offers */
-    .top-under-menu .dropdown-theme button {
-        border-radius: 0;
-    }
+        /* browser, special offers */
+        .top-under-menu .dropdown-theme button {
+            border-radius: 0;
+        }
 
     /* index */
     /* showcase */
     .showcase .container{
         text-align: start;
+        justify-content: start;
     }
 
-    .showcase .container img {
-        display:inline;
-        max-height: 30rem;
-        padding-top: 1rem;
-    }
+        .showcase .container img {
+            display:inline;
+            max-height: 30rem;
+            padding-top: 1rem;
+        }
 
     /* login */
     .location-bar .container {
