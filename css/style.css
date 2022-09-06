@@ -181,7 +181,48 @@ html, body {
                 background-color: var(--color-theme);
                 color:var(--color-theme-dark);
             }
+/* Body */
+/* showcase */
 
+.showcase {
+    background-color: var(--color-gray-3);
+}
+
+    .showcase .container {
+        display:flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .showcase .container .showcase-title h1 {
+        font-size: var(--font-size-36);
+        font-family: var(--font-play);
+        padding-top: 1rem;
+    }
+
+    .showcase .container .showcase-title h1 strong{
+        font-weight: var(--font-weight-bold);
+        color: var(--color-theme);
+    }
+            
+        .showcase .container .btn {
+            background-color: var(--color-white);
+            color:var(--color-theme);
+            border:none;
+            border-radius: var(--border-radius-small);
+            margin-bottom: 1rem;
+        }
+
+            .showcase .container .btn:hover{
+                background-color: var(--color-theme);
+                color:var(--color-white);
+            }
+
+            .showcase .container img {
+                display:none;
+            }
+
+/* login */
     .location-bar {
         background-color: #4c526b;
         color:var(--color-white);
@@ -225,14 +266,29 @@ html, body {
         display:inline;
     }
 
+    /* green top menu */
     .top-menu .container {
         padding: none;
     }
 
+    /* browser, special offers */
     .top-under-menu .dropdown-theme button {
         border-radius: 0;
     }
 
+    /* index */
+    /* showcase */
+    .showcase .container{
+        text-align: start;
+    }
+
+    .showcase .container img {
+        display:inline;
+        max-height: 30rem;
+        padding-top: 1rem;
+    }
+
+    /* login */
     .location-bar .container {
         padding: none;
     }
@@ -240,7 +296,6 @@ html, body {
     .location-bar .my-account{
         padding: 2rem 0;
     }
-
 }
 
 
