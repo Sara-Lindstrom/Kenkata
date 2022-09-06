@@ -223,6 +223,17 @@ html, body {
                 display:none;
             }
 
+/* shopping info */
+.shopping-info .container-fluid {
+    display:flex;
+    justify-content: space-evenly;
+    padding: 4rem 0;
+}
+
+    .shopping-info .container-fluid .info-box {
+    }
+
+
 /* login */
     .location-bar {
         background-color: #4c526b;
@@ -266,7 +277,7 @@ html, body {
     .hidden-text{
         display:inline;
     }
-
+    /* header */
     /* green top menu */
     .top-menu .container {
         padding: none;
@@ -278,6 +289,7 @@ html, body {
         }
 
     /* index */
+    /* main */
     /* showcase */
     .showcase .container{
         text-align: start;
@@ -286,17 +298,26 @@ html, body {
 
         .showcase .container img {
             display:inline;
-            max-height: 30rem;
+            height: 30rem;
             padding-top: 1rem;
         }
 
     /* login */
+    /* main */
     .location-bar .container {
         padding: none;
     }
 
     .location-bar .my-account{
         padding: 2rem 0;
+    }
+
+    @media(min-width:992px) {
+        /* index */
+        /* showcase */
+        .showcase .container .showcase-title h1 {
+            font-size: var(--font-size-60);
+        }
     }
 }
 
