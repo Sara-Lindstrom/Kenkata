@@ -279,49 +279,52 @@ html, body {
     justify-content: center;
 }
 
-.shop-by-category .container img{
-    height: 1rem;
-    width: 10rem;
-}
-
-.shop-by-category .container .hidden-text {
-    margin-top: 1rem;
-}
-
-.shop-by-category .container .grid-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 60px);
-    gap: 0.7rem;
-}
-
-    .container .grid-container .grid-item-square{
-        background: var(--color-gray-1);
-        border-radius: var(--border-radius-small);
-        overflow: hidden;
-
-    }
-    .container .grid-container .grid-item-horisontel{
-        grid-column:span 2;
-        background: var(--color-gray-1);
-        border-radius: var(--border-radius-small);
-        overflow: hidden;
-
-    }
-    .container .grid-container .grid-item-big{
-        grid-column: span 2;
-        grid-row: span 2;
-        background: var(--color-gray-1);
-        border-radius: var(--border-radius-small);
-        overflow: hidden;
-
+    .shop-by-category .container img{
+        height: 1rem;
+        width: 10rem;
+        display:none;
     }
 
-    .container .grid-container .category-title {
-        background: var(--color-theme-dark);
-        color: var(--color-theme);
-        font-weight: var(--font-weight-medium);
+    .shop-by-category .container h3 {
+        padding-top: 2rem;
     }
+
+    .shop-by-category .container .grid-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 60px);
+        gap: 0.7rem;
+    }
+
+        .container .grid-container .grid-item-square{
+            background: var(--color-gray-1);
+            border-radius: var(--border-radius-small);
+            overflow: hidden;
+
+        }
+        .container .grid-container .grid-item-horisontel{
+            grid-column:span 2;
+            background: var(--color-gray-1);
+            border-radius: var(--border-radius-small);
+            overflow: hidden;
+
+        }
+        .container .grid-container .grid-item-big{
+            grid-column: span 2;
+            grid-row: span 2;
+            background: var(--color-gray-1);
+            border-radius: var(--border-radius-small);
+            overflow: hidden;
+        }
+
+        .container .grid-container .category-title {
+            background: var(--color-theme-dark);
+            color: var(--color-theme);
+            font-weight: var(--font-weight-medium);
+            width:50%;
+            border-radius: 0 var(--border-radius-small) 0 0;
+            
+        }
 
 /* login */
 /* location bar */
@@ -397,6 +400,15 @@ html, body {
     .shop-by-category .container .grid-container {
         grid-template-rows: repeat(3, 100px);
     }
+
+        .shop-by-category .container .section-title img {
+            display:inline;
+            margin-bottom: 1rem;
+        }
+
+        .shop-by-category .container .grid-container {
+            padding-top: 2rem;
+        }
 
     /* shopping info */
     .shopping-info .container-fluid {
