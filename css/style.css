@@ -149,16 +149,17 @@ html, body {
                 padding-right: 0.7rem;
             }
 
+            .top-main-menu .my-account span {
+                position:absolute;
+                top:-1.2rem;
+                left:0;
+                background: var(--color-theme);
+            }
+
                 .top-main-menu .my-account a:hover span {
                     color: var(--color-theme-dark);
                 }
 
-            .top-main-menu .my-account span {
-                position:absolute;
-                top:-1rem;
-                left:0.7rem;
-                background: var(--color-theme);
-            }
 
 /* browser, special offers */
 .top-under-menu {
@@ -302,13 +303,18 @@ html, body {
 
     .shop-by-category .container h3 {
         padding-top: 2rem;
+        font-weight: var(--font-weight-medium);
+    }
+
+    .shop-by-category .container span {
+        font-weight: var(--font-weight-bold);
     }
 
     .shop-by-category .container .grid-container {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(3, 60px);
-        gap: 0.7rem;
+        gap: 0.2rem;
     }
 
         .container .grid-container .grid-item-square{
@@ -338,12 +344,18 @@ html, body {
             .container .grid-container .category-title {
                 background: var(--color-theme-dark);
                 color: var(--color-theme);
-                font-weight: var(--font-weight-medium);
-                width:50%;
+                font-weight: var(--font-weight-regular);
+                font-size: 1rem;
                 border-radius: 0 var(--border-radius-small) 0 0;
-                padding: 0.3rem 1rem;
+                padding: 0.3rem;
+                width: 100%;
                 position:absolute;
                 bottom:0;
+            }
+
+            .container .grid-container a:hover .category-title{
+                height: 100%;
+                width: 100%;
             }
 
 /* login */
@@ -404,6 +416,12 @@ html, body {
 
     /* index */
     /* main */
+    /* Logotype, my account */
+    .top-main-menu .my-account span {
+        top:-1rem;
+        left:0.7rem;
+    }
+
     /* showcase */
     .showcase .container{
         text-align: start;
@@ -416,19 +434,6 @@ html, body {
             padding-top: 1rem;
         }
 
-    /* shop by category grid */
-    .shop-by-category .container .grid-container {
-        grid-template-rows: repeat(3, 100px);
-    }
-
-        .shop-by-category .container .section-title img {
-            display:inline;
-            margin-bottom: 1rem;
-        }
-
-        .shop-by-category .container .grid-container {
-            padding-top: 2rem;
-        }
 
     /* shopping info */
     .shopping-info .container-fluid {
@@ -446,6 +451,43 @@ html, body {
                 margin: 0.7rem;
             }
 
+
+    /* shop by category grid */
+    .shop-by-category .container .grid-container {
+        grid-template-rows: repeat(3, 100px);
+    }
+
+        .shop-by-category .container .section-title img {
+            display:inline;
+            margin-bottom: 1rem;
+        }
+
+        .shop-by-category .container h3 {
+            font-weight: var(--font-weight-menium);
+        }
+
+        .shop-by-category .container .grid-container {
+            padding-top: 2rem;
+        }
+
+        .shop-by-category .container h3 {
+            padding-top: 2rem;
+            font-weight: var(--font-weight-medium);
+        }
+        
+            .shop-by-category .container span {
+                font-weight: var(--font-weight-bold);
+            }
+
+            .container .grid-container .category-title {
+                font-weight: var(--font-weight-medium);
+                width:70%;
+            }
+
+            .container .grid-container a:hover .category-title{
+                height: 3rem;
+                width: 70%;
+            }
 
 
     /* login */
@@ -494,6 +536,21 @@ html, body {
     .shop-by-category .container .grid-container {
         grid-template-rows: repeat(3, 200px);
     }
+
+    .shop-by-category .container h3 {
+        font-weight: var(--font-weight-bold);
+    }
+
+    .container .grid-container .category-title{
+        width:50%;
+    }
+
+    .container .grid-container a:hover .category-title{
+        height: 4rem;
+        width: 50%;
+    }
+
+    
 }
 
 
