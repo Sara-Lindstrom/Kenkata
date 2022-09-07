@@ -138,11 +138,27 @@ html, body {
                 color:var(--color-theme-dark);
                 text-decoration: none;
                 margin-left: 1rem;
+                position: relative;
             }
 
                 .top-main-menu .my-account a:hover {
                     color:var(--color-theme);
                 }
+
+            .top-main-menu .my-account i {
+                padding-right: 0.7rem;
+            }
+
+                .top-main-menu .my-account a:hover span {
+                    color: var(--color-theme-dark);
+                }
+
+            .top-main-menu .my-account span {
+                position:absolute;
+                top:-1rem;
+                left:0.7rem;
+                background: var(--color-theme);
+            }
 
 /* browser, special offers */
 .top-under-menu {
@@ -275,7 +291,6 @@ html, body {
 
 /* shop by category grid */
 .shop-by-category .container {
-    text-align: center;
     justify-content: center;
 }
 
@@ -300,6 +315,7 @@ html, body {
             background: var(--color-gray-1);
             border-radius: var(--border-radius-small);
             overflow: hidden;
+            position: relative;
 
         }
         .container .grid-container .grid-item-horisontel{
@@ -307,6 +323,7 @@ html, body {
             background: var(--color-gray-1);
             border-radius: var(--border-radius-small);
             overflow: hidden;
+            position: relative;
 
         }
         .container .grid-container .grid-item-big{
@@ -315,16 +332,19 @@ html, body {
             background: var(--color-gray-1);
             border-radius: var(--border-radius-small);
             overflow: hidden;
+            position: relative;
         }
 
-        .container .grid-container .category-title {
-            background: var(--color-theme-dark);
-            color: var(--color-theme);
-            font-weight: var(--font-weight-medium);
-            width:50%;
-            border-radius: 0 var(--border-radius-small) 0 0;
-            
-        }
+            .container .grid-container .category-title {
+                background: var(--color-theme-dark);
+                color: var(--color-theme);
+                font-weight: var(--font-weight-medium);
+                width:50%;
+                border-radius: 0 var(--border-radius-small) 0 0;
+                padding: 0.3rem 1rem;
+                position:absolute;
+                bottom:0;
+            }
 
 /* login */
 /* location bar */
