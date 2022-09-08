@@ -245,6 +245,11 @@ html, body {
 
     /* login and register */
     /* login info */
+
+    .container {
+        justify-content: space-between;
+    }
+
     .container .login {
         background: var(--color-gray-3);
         color:var(--color-theme-dark);
@@ -283,6 +288,45 @@ html, body {
             margin: 1rem 0;
             width: 100%;
         }
+
+            .container .login .login-help {
+                display: flex;
+                justify-content: space-between;
+            }
+
+                .container .login .login-help .checkbox{
+                    filter:brightness(97%);
+                }
+
+                .container .login .login-help a{
+                    text-decoration: none;
+                    color: var(--color-theme);
+                }
+
+        .container .login .or-login-with{
+            display: flex;
+        }
+
+            .container .login .or-login-with h3 {
+                text-align: center;
+                flex: 1;
+            }
+
+            .container .login .or-login-with .line {
+                color: rgb(196, 195, 195);
+                align-self: center;
+                border: 1px solid;
+                height: 1px;
+                flex: 1;
+            }
+
+        .container .login .social-media-login{
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+        
 
 /* /main */
 

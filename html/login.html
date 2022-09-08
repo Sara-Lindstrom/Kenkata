@@ -124,7 +124,7 @@
     </header>
     <main>
         <!-- login an register -->
-        <div class="container" class="flex">
+        <div class="container flex">
             <div class="login">
                 <!-- Login info. input types from w3schools -->
                 <div class="login-info">
@@ -141,23 +141,41 @@
                 <button class="btn btn-secondary">LOG IN</button>
 
                 <!-- bootstrap checkbox -->
-                <div class="flex">
-                    <input type="checkbox" aria-label="Checkbox for following text input"><span>Remember me</span>
+                <div class="login-help">
+                    <div class="remember-me"><input type="checkbox" class="checkbox" aria-label="Checkbox for following text input"><span>Remember me</span></div>
                     <a href="#" class="lost-password">Lost your password?</a>
                 </div>
 
                 <!-- Login social media -->
-                <h3>OR LOGIN WITH</h3>
+                <div class="or-login-with">
+                    <div class="line"></div>
+                    <h3>OR LOGIN WITH</h3>
+                    <div class="line"></div>
+                </div>
+                
 
-                <div class="flex">
+                <div class="social-media-login">
                     <a href="#"><img src="../img/Facebook-login.svg"></a>
                     <a href="#"><img src="../img/Google-login.svg"></a>
                 </div>
             </div>
 
-            <div class="register">
+            <!-- register -->
+            <div class="register login">
+
+                <!-- Login info. input types from w3schools -->
+                <div class="login-info">
+                    <h2>LOGIN</h2>
+
+                    <p>Email adress <span>*</span></p>
+                    <input type="email">
+
+                    <P>Password <span>*</span></P>
+                    <input type="password">
+                </div>
 
             </div>
+
         </div>
     </main>
     
