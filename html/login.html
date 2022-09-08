@@ -7,7 +7,7 @@
     <title>Clothes for all people - Kenkata</title>
     <script src="https://kit.fontawesome.com/41c8b474e2.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/login-style.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"defer></script>
     <script src="script.js"defer></script>
 </head>
@@ -124,17 +124,36 @@
     </header>
     <main>
         <!-- login an register -->
-        <div class="container">
+        <div class="container" class="flex">
             <div class="login">
-                <p>Email adress</p>
-                <input type="email">
+                <!-- Login info. input types from w3schools -->
+                <div class="login-info">
+                    <h2>LOGIN</h2>
 
-                <P>Password</P>
-                <input type="password">
+                    <p>Email adress <span>*</span></p>
+                    <input type="email">
 
+                    <P>Password <span>*</span></P>
+                    <input type="password">
+                </div>
+
+                <!-- bootstrap button -->
                 <button class="btn btn-secondary">LOG IN</button>
 
-                <input type="checkbox" aria-label="Checkbox for following text input">
+                <!-- bootstrap checkbox -->
+                <div class="flex">
+                    <input type="checkbox" aria-label="Checkbox for following text input"><span>Remember me</span>
+                    <a href="#" class="lost-password">Lost your password?</a>
+                </div>
+
+                <!-- Login social media -->
+                <h3>OR LOGIN WITH</h3>
+
+                <div class="flex">
+                    <a href="#"><img src="../img/Facebook-login.svg"></a>
+                    <a href="#"><img src="../img/Google-login.svg"></a>
+                </div>
+            </div>
 
             <div class="register">
 

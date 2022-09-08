@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --color-theme:#20d3c2;
+    --color-theme-light:#edfcfa;
+    --color-theme-dark:#2c3461;
+    --color-dark:#080c24;
+    --color-white:#ffffff;
+    --color-gray-0:#aaaaaa;
+    --color-gray-1:#cccccc;
+    --color-gray-2:#e3e3e3;
+    --color-gray-3:#eeeeee;
+    --color-gray-4:#f6f6f6;
+    --color-product-instock:#82d8c6;
+    --color-product-outofstock:#fe6c6c;
+
+    --font-play:'Play', sans-serif;
+    --font-roboto:'Roboto', sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;    
+
+    --font-size-14: 1rem;
+    --font-size-16: 1.33rem;
+    --font-size-18: 1.50rem;
+    --font-size-24: 2rem;
+    --font-size-36: 3rem;
+    --font-size-60: 5rem;
+
+    --border-radius-small: 0.7rem;
+    --border-radius-meduim: 10rem;
+
+}
+
+/* general styling throughout */
+
+html, body {
+    font-family:var(--font-roboto);
+    font-weight: var(--font-weight-regular);
+    color:var(--color-theme-dark);
+}
+
+.flex {
+    display:flex;
+}
+
+.hidden-text {
+    display:none;
+}
+
+.btn-theme {
+    border-radius: var(--border-radius-meduim);
+    font-weight: var(--font-weight-regular);
+}
+
+/* header */
+    /* green top menu */
+    .top-menu {
+        background-color: var(--color-theme);
+        color:var(--color-white);
+    }
+
+        .top-menu a {
+            color:var(--color-white);
+            text-decoration: none;
+        }
+
+            .top-menu a:hover {
+                color:var(--color-theme-dark); 
+            }
+
+        .top-menu .container {
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            padding:0.7rem;
+            height:100%;
+        }  
+
+            /* left side dropdown */
+            .top-menu .container .dropdown-theme button {
+                background-color: var(--color-theme);
+                color:var(--color-white);
+                border:none;
+            }
+
+                .top-menu .container .dropdown-theme button:hover {
+                    color:var(--color-theme-dark);
+                }
+
+                .top-menu .container .dropdown-theme .dropdown-menu {
+                    background-color: var(--color-theme);
+                    border:none;
+                }
+
+            .top-menu .dropdown-theme .dropdown-menu .dropdown-item {
+                background-color: var(--color-theme);
+                color: var(--color-white);
+            }
+
+                .top-menu .dropdown-theme .dropdown-menu .dropdown-item:hover {
+                    background-color: var(--color-theme);
+                    color: var(--color-theme-dark);
+                }
+
+            /* right side links */
+            .top-menu .top-menu-links a {
+                margin-right: 1.2rem; 
+            }
+
+                .top-menu .top-menu-links .social-media a {
+                    margin-right:0.3rem;
+                    padding-right: 0.5rem;
+                }
+
+    /* logotype, my account */
+    .top-main-menu{
+        background-color: var(--color-white);
+        color:var(--color-theme-dark);
+    }
+
+        .top-main-menu .container {
+            display: flex;
+            justify-content:space-between;
+            padding:2rem 0.7rem;
+        }
+
+            /* my account */
+            .top-main-menu .my-account a {
+                color:var(--color-theme-dark);
+                text-decoration: none;
+                margin-left: 1rem;
+                position: relative;
+            }
+
+                .top-main-menu .my-account a:hover {
+                    color:var(--color-theme);
+                }
+
+            .top-main-menu .my-account i {
+                padding-right: 0.7rem;
+            }
+
+            /* notification from bootstrap */
+            .top-main-menu .my-account span {
+                position:absolute;
+                top:-1.2rem;
+                left:0;
+                background: var(--color-theme);
+            }
+
+                .top-main-menu .my-account a:hover span {
+                    color: var(--color-theme-dark);
+                }
+
+
+    /* browser, special offers */
+    .top-under-menu {
+        border-top: 0.1rem var(--color-gray-3) solid ;
+    }
+
+        .top-under-menu .container {
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            /* dropdown from bootstrap */
+            .top-under-menu .dropdown-theme button {
+                background-color: var(--color-theme);
+                color:var(--color-white);
+                border:none;
+                border-radius: var(--border-radius-small);
+                padding:0.7rem;
+            }
+
+                .top-under-menu .dropdown-theme button:hover {
+                    background-color: var(--color-theme);
+                    color:var(--color-theme-dark);
+                }
+
+                .top-under-menu .dropdown-theme .dropdown-menu {
+                    background-color: var(--color-theme);
+                    border:none;
+                }
+
+                .top-under-menu .dropdown-theme .dropdown-menu .dropdown-item {
+                    background-color: var(--color-theme);
+                    color: var(--color-white);
+                }
+
+                    .top-under-menu .dropdown-theme .dropdown-menu .dropdown-item:hover {
+                        background-color: var(--color-theme);
+                        color: var(--color-theme-dark);
+                    }
+            
+        /* special offer button */
+        .top-under-menu .btn-theme {
+            background-color: var(--color-theme);
+            color:var(--color-white);
+            border:none;
+            height:99%;
+        }
+
+            .top-under-menu .btn-theme:hover{
+                background-color: var(--color-theme);
+                color:var(--color-theme-dark);
+            }
+/* /header */
+/* main */
+    /* location bar */
+    .location-bar {
+        background-color: #4c526b;
+        color:var(--color-white);
+    }
+
+        .location-bar a {
+            text-decoration: none;
+            color: var(--color-white);
+        }
+
+            .location-bar a:hover {
+                color:var(--color-dark);
+            }
+
+
+        .location-bar .container {
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .location-bar .my-account{
+            font-size: var(--font-size-16);
+            color:var(--color-theme);
+        }
+
+            .location-bar .container .home{
+                color:var(--color-theme);
+            }
+
+                .location-bar .container .home:hover {
+                    color: var(--color-dark);
+                }
+
+    /* login and register */
+    /* login info */
+    .container .login {
+        background: var(--color-gray-3);
+        color:var(--color-theme-dark);
+        font-family: var(--font-roboto);
+        border-radius: var(--border-radius-small);
+        margin: 5rem 0;
+        padding:1.5rem;
+    }
+
+        .login .login-info {
+            font-size: var(--font-size-16);
+        }
+
+            .login .login-info p{
+                font-size: var(--font-size-14);
+                margin-top: 1rem;
+                margin-bottom: 0;
+            }
+
+            .login .login-info span {
+                color:var(--color-theme);
+            }
+
+            .login .login-info input {
+                border:var(--color-gray-2);
+                margin-bottom: 1rem;
+                width: 100%;
+
+            }
+
+        /* Login button */
+        .container .login .btn {
+            border-radius: var(--border-radius-meduim);
+            background: var(--color-theme);
+            border:none;
+            margin: 1rem 0;
+            width: 100%;
+        }
+
+/* /main */
+
+/* responsive */
+    @media (min-width:768px){
+        .hidden-text{
+            display:inline;
+        }
+
+    /* header */
+        /* green top menu */
+        .top-menu .container {
+            padding: none;
+        }
+
+        /* Logotype, my account */
+        .top-main-menu .my-account span {
+            top:-1rem;
+            left:0.7rem;
+        }
+
+        /* browser, special offers */
+        .top-under-menu .dropdown-theme button {
+            border-radius: 0;
+        }
+
+    /* /header */
+    /* main */
+        /* login */
+        .location-bar .container {
+            padding: none;
+        }
+
+            .location-bar .my-account{
+                padding: 2rem 0;
+            }
+    }

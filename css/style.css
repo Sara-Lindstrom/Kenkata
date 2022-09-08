@@ -364,45 +364,6 @@ html, body {
                 width: 100%;
             }
 
-/* login */
-/* location bar */
-    .location-bar {
-        background-color: #4c526b;
-        color:var(--color-white);
-    }
-
-        .location-bar a {
-            text-decoration: none;
-            color: var(--color-white);
-        }
-
-            .location-bar a:hover {
-                color:var(--color-dark);
-            }
-
-
-        .location-bar .container {
-            display:flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .location-bar .my-account{
-            font-size: var(--font-size-16);
-            color:var(--color-theme);
-        }
-
-            .location-bar .container .home{
-                color:var(--color-theme);
-            }
-
-                .location-bar .container .home:hover {
-                    color: var(--color-dark);
-                }
-                
-    /* login and register */
-
-
 
 /* responsive */
 @media (min-width:768px){
@@ -435,8 +396,6 @@ html, body {
         border-radius: 0;
     }
 
-    /* index */
-    /* main */
     /* Logotype, my account */
     .top-main-menu .my-account span {
         top:-1rem;
@@ -492,16 +451,6 @@ html, body {
                 width: 70%;
             }
 
-
-    /* login */
-    /* main */
-    .location-bar .container {
-        padding: none;
-    }
-
-        .location-bar .my-account{
-            padding: 2rem 0;
-        }
 }
 
 @media(min-width:992px) {
