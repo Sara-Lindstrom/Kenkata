@@ -17,11 +17,11 @@
         <div class="top-menu">
             <!-- bootstrap container for a responsive website -->
             <div class="container"> 
-
                 <!-- Left side dropdown -->
                 <div class="flex">
                     <div class="dropdown-theme">
                         <div class="dropdown">
+                            <!-- bropdown from bootstrap -->
                             <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <span id="selected language">ENG</span><i class="fa-solid fa-chevron-down ms-1"></i>
                             </button>
@@ -33,6 +33,7 @@
                     </div>
                     <div class="dropdown-theme">
                         <div class="dropdown">
+                            <!-- bropdown from bootstrap -->
                             <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <span id="selected currency">EUR</span><i class="fa-solid fa-chevron-down ms-1"></i>
                             </button>
@@ -67,17 +68,24 @@
         <!-- Logotype, my account -->
         <div class="top-main-menu">
             <div class="container">
+                <!-- kenkata logotype -->
                 <div class="logotype">
                     <a href="index.html"><img src="../img/Logo.svg" alt:"Kentaka"></a>
                 </div>
 
                 <div class="serach"></div>
 
+                <!--  my account -->
                 <div class="my-account">
                     <a href="X"><i class="fa-regular fa-user"></i><div class="hidden-text">My account</div></a>
                     <a href="#"><i class="fa-regular fa-heart"></i></a>
                     <a href="#"><i class="fa-regular fa-shuffle"></i></a>
-                    <a href="#"><i class="fa-regular fa-cart-shopping"></i><div class="hidden-text">£9999.00</div></a>
+                    <a href="#">
+                        <!-- notification from bootstrap -->
+                        <i class="fa-regular fa-cart-shopping"></i>
+                        <span class="badge rounded-pill">99+</span>
+                        <div class="hidden-text">£9999.00</div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -88,6 +96,7 @@
                 <div class="browse-categories">
                     <div class="dropdown-theme">
                         <div class="dropdown">
+                            <!-- dropdown from bootstrap -->
                             <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fa-regular fa-bars me-md-3"></i><div class="hidden-text">Browse categories<i class="fa-solid fa-chevron-down ms-1 ms-md-3"></i>
                             </button>
@@ -99,9 +108,7 @@
                         </div>
                     </div>
                 </div>
-
                 <button class="btn btn-theme">SPECIAL OFFER</button>
-
             </div>
         </div>
 
@@ -109,11 +116,8 @@
         <div class="location-bar">
             <div class="container">
                 <div class="my-account">My Account</div>
-                    <div class="locatio-links">
-                        <a href="./index.html" class="home">Home</a>
-                        /
-                        <a href="./login.html">My Account</a>
-                    </div>
+                <div class="location-links">
+                    <a href="./index.html" class="home">Home </a>/<a href="./login.html"> My Account</a>
                 </div>
             </div>
         </div>
