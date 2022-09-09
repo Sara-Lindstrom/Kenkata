@@ -254,7 +254,7 @@ html, body {
 
 /* login */
 
-.container .card {
+.container .login-register .card {
     background: var(--color-gray-3);
     color:var(--color-theme-dark);
     font-family: var(--font-roboto);
@@ -266,29 +266,29 @@ html, body {
 }
 
 /* login input */
-.login .login-input {
+.container .login-register .login .login-input {
     font-size: var(--font-size-16);
 }
 
-.login .login-input p{
+.container .login-register .login .login-input p{
     font-size: var(--font-size-14);
     margin-top: 1rem;
     margin-bottom: 0;
 }
 
-.login .login-input span {
+.container .login-register .login .login-input span {
     color:var(--color-theme);
 }
 
-.login .login-input input {
+.container .login-register .login .login-input input {
     border:var(--color-gray-2);
     margin-bottom: 1rem;
     width: 100%;
-
+    outline:none;
 }
 
 /* Login button */
-.container .login .btn {
+.container .login-register .login .btn {
     border-radius: var(--border-radius-meduim);
     background: var(--color-theme);
     border:none;
@@ -296,41 +296,48 @@ html, body {
     width: 100%;
 }
 
+.container .login-register .login .btn:hover{
+    color: var(--color-theme-dark);
+}
+
 /* login help */
-.container .login .login-help {
+.container .login-register .login .login-help {
     display:flex;
     justify-content: space-between;
     font-size: 0.7rem;
 }
 
-.container .login .login-help .checkbox{
+.container .login-register .login .login-help .checkbox{
     filter:brightness(97%);
     margin-right:0.5rem;
 }
 
 
-.container .login .login-help .remember-me{
+.container .login-register .login .login-help .remember-me{
     margin:0.5rem;
 }
 
-.container .login .login-help a{
+.container .login-register .login .login-help a{
     text-decoration: none;
     color: var(--color-theme);
 }
+.container .login-register .login .login-help a:hover {
+    color: var(--color-theme-dark);
+}
 
 /* Login social media */
-.container .login .or-login-with{
+.container .login-register .login .or-login-with{
     display: flex;
 }
 
-.container .login .or-login-with h3 {
+.container .login-register .login .or-login-with h3 {
     text-align: center;
     font-size: var(--font-size-16);
     flex: 1;
     margin: 1rem 0;
 }
 
-.container .login .or-login-with .line {
+.container .login-register .login .or-login-with .line {
     display:block;
     color: rgb(196, 195, 195);
     align-self: center;
@@ -339,19 +346,29 @@ html, body {
     flex: 1;
 }
 
-.container .login .social-media-login{
+.container .login-register .login .social-media-login{
     display:flex;
     justify-content: space-evenly;
 }
 
-.container .login .social-media-login img {
+.container .login-register .login .social-media-login img {
     max-width: 10rem;
+    filter:brightness(95%);
+}
+
+.container .login-register .login .social-media-login img:hover {
+    filter:brightness(110%);
 }
 
 /* register */
-.container .register a {
+.container .login-register .register a {
     text-decoration: none;
     color: var(--color-theme);
+}
+
+/* register info */
+.container .login-register .register a:hover {
+    color: var(--color-theme-dark);
 }
 
 
@@ -381,7 +398,7 @@ html, body {
 
 /* /header */
 /* main */
-/* login */
+/* location bar */
 .location-bar .container {
     padding: none;
 }
@@ -390,7 +407,8 @@ html, body {
     padding: 2rem 0;
 }
 
-.container .login .login-help {
+/* login and register */
+.container .login-register .login .login-help {
     font-size: 1rem;
 }
 
@@ -398,7 +416,7 @@ html, body {
     max-width: fit-content;
 }
 
-.container .login .register-login .login-input .hidden-text {
+.container .login-register .login .login-input .hidden-text {
     display:none;
 }
 }
