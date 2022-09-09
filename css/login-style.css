@@ -370,9 +370,26 @@ html, body {
 .container .login-register .register a:hover {
     color: var(--color-theme-dark);
 }
-
-
 /* /main */
+/* footer */
+.footer {
+    background: var(--color-dark);
+    height: 4rem;
+    margin-top:5rem;
+}
+
+.footer .container {
+    position:relative
+}
+
+.footer .container p {
+    position:absolute;
+    top: 1.3rem;
+    font-size: 0.8rem;
+    font-weight: var(--font-weight-regular);
+    color: var(--color-white);
+}
+
 /* responsive */
 @media (min-width:768px){
 .hidden-text{
