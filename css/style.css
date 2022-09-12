@@ -48,9 +48,11 @@ html, body {
     display:none;
 }
 
-.btn-theme {
+.button-theme {
     border-radius: var(--border-radius-meduim);
     font-weight: var(--font-weight-regular);
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
 }
 
 .section-title {
@@ -149,6 +151,10 @@ html, body {
     padding:2rem 0.7rem;
 }
 
+.top-main-menu .container img:hover {
+    filter:saturate(200%);
+}
+
 /* my account */
 .top-main-menu .my-account a {
     color:var(--color-theme-dark);
@@ -192,6 +198,7 @@ html, body {
 /* dropdown from bootstrap */
 .top-under-menu .dropdown-theme button {
     background-color: var(--color-theme);
+    font-size: var(--font-size-14);
     color:var(--color-white);
     border:none;
     border-radius: var(--border-radius-small);
@@ -219,14 +226,13 @@ html, body {
 }
 
 /* special offer button */
-.top-under-menu .btn-theme {
+.top-under-menu .button-theme {
     background-color: var(--color-theme);
     color:var(--color-white);
     border:none;
-    height:99%;
 }
 
-.top-under-menu .btn-theme:hover{
+.top-under-menu .button-theme:hover{
     background-color: var(--color-theme);
     color:var(--color-theme-dark);
 }
@@ -234,6 +240,7 @@ html, body {
 /* showcase */
 .showcase {
     background-color: var(--color-gray-3);
+    padding: 1rem;
 }
 
 .showcase .container {
@@ -241,6 +248,7 @@ html, body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    
 }
 
 .showcase .container .showcase-title h1 {
@@ -255,15 +263,14 @@ html, body {
 }
 
 /* shop now button */
-.showcase .container .btn {
+.showcase .container .button {
     background-color: var(--color-white);
     color:var(--color-theme);
     border:none;
-    border-radius: var(--border-radius-small);
-    margin-bottom: 1rem;
+    border-radius: var(--border-radius-meduim);
 }
 
-.showcase .container .btn:hover{
+.showcase .container .button:hover{
     background-color: var(--color-theme);
     color:var(--color-white);
 }
@@ -288,13 +295,15 @@ html, body {
 }
 
 .shopping-info .container-fluid .info-box img {
-    height: 20px;
+    height: 20px;              
+    transition:all 0.5s;
 }
 
 .shopping-info .container-fluid .info-box h2 {
     font-weight: var(--font-weight-regular);
     font-size: var(--font-size-14);
-    color: var(--color-theme);
+    color: var(--color-theme);              
+    transition:all 0.5s;
 }
 
 .shopping-info .container-fluid .info-box:hover {
@@ -373,6 +382,13 @@ html, body {
 }
 
 
+/* other @'s */
+@media (hover:hover) {
+    a , button , .info-box , .category-title{       
+        transition:all 0.5s;
+    }
+}
+
 /* responsive */
 @media (min-width:768px){
 .hidden-text{
@@ -408,9 +424,14 @@ html, body {
 .top-main-menu .my-account span {
     top:-1rem;
     left:0.7rem;
+    transition: all 0.7s;
 }
 
 /* showcase */
+.showcase {
+    padding: 0;
+}
+
 .showcase .container{
     text-align: start;
     justify-content: start;
