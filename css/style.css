@@ -151,8 +151,12 @@ html, body {
     padding:2rem 0.7rem;
 }
 
-.top-main-menu .container img:hover {
-    filter:saturate(200%);
+.top-main-menu .container .logotype img{
+    transition: transform 0.3s;
+}
+
+.top-main-menu .container .logotype:hover img {
+    transform: scale(1.1);
 }
 
 /* my account */
