@@ -381,18 +381,21 @@ html, body {
 /* new arrivals */
 /* card*/
 .new-arrivals .container .cardrow {
-    display: flex;
+    display:block;
     margin-bottom: 10rem;
 }
 
 .new-arrivals .container .cardrow .card {
-    flex:1;
     margin: 2rem 1rem;
     position: relative;
     border-radius: var(--border-radius-small);
     overflow: hidden;
     border:none;
     background-color: var(--color-gray-3);
+}
+
+.new-arrivals .container .cardrow .card img {
+    height: 50vw;
 }
 
 /* pop up */
@@ -582,9 +585,21 @@ html, body {
     height: 3.5rem;
     width: 70%;
 }
-}
 
 /* new arrivals */
+.new-arrivals .container .cardrow {
+    display: flex;
+    justify-content: center;
+}
+
+.new-arrivals .container .cardrow .card .card-background {
+    flex:1;
+}
+
+.new-arrivals .container .cardrow .card img {
+    height: 30vw;
+}
+
 .new-arrivals .container .cardrow .card .card-pop-up .card-pop-up-info{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -598,7 +613,7 @@ html, body {
     text-align: end;
     margin-right: 1rem;
 }
-
+}
 
 @media(min-width:992px) {
 
@@ -660,6 +675,10 @@ html, body {
 }
 
  /* new arrivals */ 
+.new-arrivals .container .cardrow .card img {
+    height: 100%;
+}
+
  .new-arrivals .container .cardrow .card .card-pop-up {
     position:absolute;
     height: 15%;
@@ -676,11 +695,11 @@ html, body {
     display: block;
     position: absolute;
     top:0;
-    transition: top 305ms ease-in-out;
+    transition: top 300ms ease-in-out;
 }
 
 .new-arrivals .container .cardrow .card:hover .card-pop-up .card-pop-up-info {
-    top:50%;
+    top:55%;
 }
 
 .new-arrivals .container .cardrow .card .card-pop-up .card-pop-up-info h4 {
