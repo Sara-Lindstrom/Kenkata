@@ -378,13 +378,13 @@ html, body {
     width: 100%;
 }
 
-/* new arrivals */
+/* new arrivals and featured products */
 /* card*/
-.new-arrivals .container .cardrow {
+.container .cardrow {
     display:block;
 }
 
-.new-arrivals .container .cardrow .card {
+.container .cardrow .card {
     margin: 2rem 1rem;
     position: relative;
     border-radius: var(--border-radius-small);
@@ -393,12 +393,12 @@ html, body {
     background-color: var(--color-gray-3);
 }
 
-.new-arrivals .container .cardrow .card img {
+ .container .cardrow .card img {
     height: 50vw;
 }
 
 /* pop up */
-.new-arrivals .container .cardrow .card .card-pop-up {
+ .container .cardrow .card .card-pop-up {
     position:relative;
     background-color: var(--color-theme-dark);
     bottom: 0;
@@ -408,7 +408,7 @@ html, body {
 }
 
 /* pop up info/text */
-.new-arrivals .container .cardrow .card .card-pop-up .card-pop-up-info{
+ .container .cardrow .card .card-pop-up .card-pop-up-info{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
@@ -416,7 +416,7 @@ html, body {
 }
 
 
-.new-arrivals .container .cardrow .card .card-pop-up .card-pop-up-info h4 {
+ .container .cardrow .card .card-pop-up .card-pop-up-info h4 {
     grid-column: span 2;
     font-size: 1rem;
     font-weight: var(--font-weight-regular);
@@ -424,7 +424,7 @@ html, body {
     margin-top: 1rem;
 }
 
-.new-arrivals .container .cardrow .card .card-pop-up .card-pop-up-info button {
+.container .cardrow .card .card-pop-up .card-pop-up-info button {
     grid-column: 1;
     grid-row: 2;
     height: 2rem;
@@ -435,11 +435,11 @@ html, body {
     margin-bottom: 1rem;
 }
 
-.new-arrivals .container .cardrow .card .card-pop-up .card-pop-up-info p {
+.container .cardrow .card .card-pop-up .card-pop-up-info p {
     margin:0.3rem 1rem;
 }
 
-.new-arrivals .container .cardrow .card .card-pop-up .card-pop-up-info .original-price {
+.container .cardrow .card .card-pop-up .card-pop-up-info .original-price {
     grid-column: 3;
     grid-row: 1;
     margin-top: 1.5rem;
@@ -448,7 +448,7 @@ html, body {
     text-decoration: line-through;
 }
 
-.new-arrivals .container .cardrow .card .card-pop-up .card-pop-up-info .disscount-price {
+.container .cardrow .card .card-pop-up .card-pop-up-info .disscount-price {
     grid-column: 3;
     grid-row: 2;
     margin-bottom: 1rem;
@@ -456,8 +456,20 @@ html, body {
     font-size: var(--font-size-16);
 }
 
+.container .cardrow .card .card-pop-up .card-pop-up-info .featured-star-rating {
+    grid-column: 2;
+    grid-row:2;
+    justify-self: center;
+    align-self: center;
+    font-size: 0.7rem;
+    color: var(--color-theme);
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+
+}
+
 /* options and availability */
-.new-arrivals .container .cardrow .card .options-availability {
+.container .cardrow .card .options-availability {
     position: absolute;
     background-color:var(--color-white);
     border: 1px var(--color-gray-2) solid;
@@ -468,20 +480,20 @@ html, body {
     border-radius: var(--border-radius-meduim);
 }
 
-.new-arrivals .container .cardrow .card .options-availability a {
+.container .cardrow .card .options-availability a {
     text-decoration: none;
     color: var(--color-dark);
 }
 
-.new-arrivals .container .cardrow .card .options-availability li {
+.container .cardrow .card .options-availability li {
     margin: 0.3rem;
 }
 
-.new-arrivals .container .cardrow .card .options-availability .available {
+.container .cardrow .card .options-availability .available {
     color: var(--color-theme);
 }
 
-.new-arrivals .container .cardrow .card .options-availability .not-available {
+.container .cardrow .card .options-availability .not-available {
     color: rgb(196, 89, 89);
 }
 
@@ -646,32 +658,43 @@ html, body {
 }
 
 /* new arrivals */
-.new-arrivals .container .cardrow {
+.container .cardrow {
     display: flex;
     justify-content: center;
 
 }
 
-.new-arrivals .container .cardrow .card .card-background {
+.container .cardrow .card .card-background {
     flex:1;
 }
 
-.new-arrivals .container .cardrow .card img {
+.container .cardrow .card img {
     height: 30vw;
 }
 
-.new-arrivals .container .cardrow .card .card-pop-up .card-pop-up-info{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
+.container .cardrow .card .card-pop-up .card-pop-up-info{
     color: var(--color-white);
 }
 
-.new-arrivals .container .cardrow .card .card-pop-up .card-pop-up-info .disscount-price {
+.container .cardrow .card .card-pop-up .card-pop-up-info h4 {
     grid-column: span 2;
+}
+
+.container .cardrow .card .card-pop-up .card-pop-up-info p {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.container .cardrow .card .card-pop-up .card-pop-up-info .disscount-price {
+    grid-column: 2;
     grid-row: 2;
     text-align: end;
     margin-right: 1rem;
+}
+
+.container .cardrow .card .card-pop-up .card-pop-up-info {
+    grid-column: 1;
+    grid-row: 3;
 }
 
 /* new costumer disscount */
@@ -762,68 +785,68 @@ html, body {
 }
 
  /* new arrivals */ 
-.new-arrivals .container .cardrow .card img {
+.container .cardrow .card img {
     height: 100%;
 }
 
- .new-arrivals .container .cardrow .card .card-pop-up {
+.container .cardrow .card .card-pop-up {
     position:absolute;
     height: 15%;
     opacity: 90%;
     transition: height 300ms ease-in-out;
 }
 
-.new-arrivals .container .cardrow .card:hover .card-pop-up {
+.container .cardrow .card:hover .card-pop-up {
     height: 100%;
 }
 
 /* pop up info/text */
-.new-arrivals .container .cardrow .card .card-pop-up .card-pop-up-info{
+ .container .cardrow .card .card-pop-up .card-pop-up-info{
     display: block;
     position: absolute;
     top:0;
     transition: top 300ms ease-in-out;
 }
 
-.new-arrivals .container .cardrow .card:hover .card-pop-up .card-pop-up-info {
+.container .cardrow .card:hover .card-pop-up .card-pop-up-info {
     top:55%;
 }
 
-.new-arrivals .container .cardrow .card .card-pop-up .card-pop-up-info h4 {
+.container .cardrow .card .card-pop-up .card-pop-up-info h4 {
     font-size: var(--font-size-16);
     padding-top: 0rem;
     padding-bottom: 0.7rem;
 }
 
-.new-arrivals .container .cardrow .card .card-pop-up .card-pop-up-info button {
+.container .cardrow .card .card-pop-up .card-pop-up-info button {
     font-size: var(--font-size-14);
     margin-left: 1rem;
     margin-bottom: 0;
 }
 
-.new-arrivals .container .cardrow .card .card-pop-up .card-pop-up-info button:hover {
+.container .cardrow .card .card-pop-up .card-pop-up-info button:hover {
     color: var(--color-theme);
     border: 1px var(--color-theme) solid;
 }
 
-.new-arrivals .container .cardrow .card .card-pop-up .card-pop-up-info p {
+.container .cardrow .card .card-pop-up .card-pop-up-info p {
     margin-top: 0;
     margin-left: 1rem;
 }
 
-.new-arrivals .container .cardrow .card .card-pop-up .card-pop-up-info .original-price {
+.container .cardrow .card .card-pop-up .card-pop-up-info .original-price {
     font-size: var(--font-size-14);
     text-align: left;
     text-decoration: line-through;
     margin-top:0.5rem;
 }
 
-.new-arrivals .container .cardrow .card .card-pop-up .card-pop-up-info .disscount-price {
+.container .cardrow .card .card-pop-up .card-pop-up-info .disscount-price {
     text-align: left;
 }
 
 /* options and availability */
-.new-arrivals .container .cardrow .card .options-availability {
+.container .cardrow .card .options-availability {
     position: absolute;
     top:1rem;
     right: -5rem;
@@ -832,11 +855,11 @@ html, body {
     transition: right 500ms ease-in-out;
 }
 
-.new-arrivals .container .cardrow .card:hover .options-availability {
+.container .cardrow .card:hover .options-availability {
     right:1rem;
 }
 
-.new-arrivals .container .cardrow .card .options-availability a:hover {
+.container .cardrow .card .options-availability a:hover {
     color: var(--color-theme);
 }
 
