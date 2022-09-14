@@ -6,8 +6,8 @@
     --color-theme-dark:#242b4e;
     --color-dark:#080c24;
     --color-white:#ffffff;
-    --color-gray-0:#aaaaaa;
-    --color-gray-1:#cccccc;
+    --color-gray-0:#b1b1b1;
+    --color-gray-1:#c4c4c4;
     --color-gray-2:#e3e3e3;
     --color-gray-3:#eeeeee;
     --color-gray-4:#f6f6f6;
@@ -382,7 +382,6 @@ html, body {
 /* card*/
 .new-arrivals .container .cardrow {
     display:block;
-    margin-bottom: 10rem;
 }
 
 .new-arrivals .container .cardrow .card {
@@ -485,6 +484,66 @@ html, body {
 .new-arrivals .container .cardrow .card .options-availability .not-available {
     color: rgb(196, 89, 89);
 }
+
+/* new costumer disscount */
+.background-banner {
+    background-color:var(--color-gray-1);
+    margin: 3rem 0;
+}
+
+.background-banner .container {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.background-banner .container .green-band {
+    flex:1;
+    background-color: var(--color-theme);
+    color: var(--color-white);
+    padding: 1rem 0;
+}
+
+.background-banner .container .green-band .green-band-info h6 {
+    font-size: var(--font-size-24);
+    font-family: var(--font-play);
+    font-weight: var(--font-weight-bold);
+}
+
+.background-banner .container .green-band .green-band-info span {
+    font-size: var(--font-size-16);
+
+}
+
+.background-banner .container .green-band .green-band-info p {
+    font-size: 0.7rem;
+}
+
+.background-banner .container .green-band .green-band-info button {
+    border-radius:var(--border-radius-meduim);
+    padding: 0.5rem 1rem;
+    font-size: 0.7rem;
+    background-color: var(--color-theme-dark);
+    color: var(--color-white);
+    border: none;
+}
+
+.background-banner .container .banner-info {
+    flex:1;
+    align-self: center;
+}
+
+.background-banner .container .banner-info button {
+    color: var(--color-theme);
+    background-color: var(--color-white);
+    border-radius: var(--border-radius-meduim);
+    border:none;
+    padding: 0.5rem 1rem;
+    font-size: 0.7rem;
+    font-weight:var(--font-weight-bold);
+
+}
+
 
 /* other @'s */
 /* majority of transitions */
@@ -590,6 +649,7 @@ html, body {
 .new-arrivals .container .cardrow {
     display: flex;
     justify-content: center;
+
 }
 
 .new-arrivals .container .cardrow .card .card-background {
@@ -612,6 +672,33 @@ html, body {
     grid-row: 2;
     text-align: end;
     margin-right: 1rem;
+}
+
+/* new costumer disscount */
+.background-banner .container{
+    max-height: 10rem;
+}
+
+.background-banner .container .banner-info {
+    flex:2;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.background-banner .container .banner-info p{
+    flex:1;
+    font-size: 0.7rem;
+    max-width: 17rem;
+    height: 4.5rem;
+    margin: 1rem; 
+    color: var(--color-white);
+    overflow:scroll;
+}
+
+.background-banner .container .banner-info button {
+    margin-left: 1rem;
+
 }
 }
 
@@ -751,6 +838,67 @@ html, body {
 
 .new-arrivals .container .cardrow .card .options-availability a:hover {
     color: var(--color-theme);
+}
+
+/* new costumer disscount */
+.background-banner .container {
+    max-height: max-content;
+    justify-content: space-between;
+    height: 20rem;
+}
+
+.background-banner .container .green-band {
+    margin:0;
+    margin-left: 6rem;
+    padding:0;
+    height: 100%;
+    max-width: 15rem;
+    position: relative;
+}
+
+.background-banner .container .green-band .green-band-info{
+    position: relative;
+    top:35%;
+
+}
+
+.background-banner .container .green-band h6 {
+    font-size:var(--font-size-36);
+}
+
+.background-banner .container .green-band span {
+    font-size: var(--font-size-24);
+}
+
+.background-banner .container .green-band p{
+    font-size: var(--font-size-14);
+    margin-bottom: 0.5rem;
+}
+
+.background-banner .container .green-band button {
+    font-size: var(--font-size-14);
+}
+
+.background-banner .container .banner-info {
+    display:block;
+    overflow:visible;
+    text-align: left;
+    max-width: 30rem;
+    margin: 1rem 10rem;
+    position: relative;
+}
+
+.background-banner .container .banner-info p{
+    display:block;
+    overflow:visible;
+    height: 100%;
+    max-width:100%;
+    margin:1rem;
+}
+
+.background-banner .container .banner-info .button {
+    position: relative;
+    left: 70%;
 }
 
 }
