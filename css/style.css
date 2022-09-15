@@ -411,9 +411,8 @@ html, body {
 .container-fluid .cardrow .card .card-pop-up .card-pop-up-info{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 18px 18px 18px 18px;
+    grid-template-rows: auto;
     gap: 0.4rem;
-    padding: 0.4rem;
     color: var(--color-white);
 }
 
@@ -558,6 +557,89 @@ html, body {
 
 }
 
+/* flash sale */
+.flash-sale-border{
+    background-color:var(--color-theme-dark);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* green band with content*/
+.flash-sale-border .green-half-band {
+    background-color: var(--color-theme);
+    height:50%;
+    margin: 0 2rem;
+    padding: 0.5rem;
+    text-align: center;
+    font-weight: var(--font-weight-bold);
+}
+
+.flash-sale-border .green-half-band h4 {
+    font-size: var(--font-size-18);
+    color: var(--color-white);
+    margin-top: 1rem;
+}
+
+.flash-sale-border .green-half-band p {
+    font-size: 0.7rem;
+    color: var(--color-white);
+    font-weight: var(--font-weight-bold);
+}
+
+/* count down circles */
+.flash-sale-border .count-down {
+    flex:2;
+    display: flex;
+    align-items: center;
+}
+
+.flash-sale-border .count-down .circle-box {
+    position: relative;
+    height: 2.8rem;
+    width: 2.8rem;
+    border-radius: 50%;
+    outline: 2px var(--color-theme) dotted;
+    background-color: var(--color-white);
+    text-align: center;
+    margin-right: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* transform:translate from https://blog.hubspot.com/website/center-div-css#center-div-horizontally-vertically */
+.flash-sale-border .count-down .circle-box .time {
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+    color: var(--color-theme);
+    font-weight: var(--font-weight-bold);
+}
+
+.flash-sale-border .count-down .circle-box p {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:var(--color-theme-dark);
+    font-weight: var(--font-weight-medium);
+    font-size: 0.5rem;
+    padding: 0 0.2rem;
+}
+
+.shop-now {
+    position: absolute;
+    font-size: 0.7rem;
+    bottom:10%;
+    right: 21.5%;
+    border-radius: var(--border-radius-meduim);
+    border: none;
+    font-weight: var(--font-weight-bold);
+    background-color: var(--color-white);
+    color: var(--color-theme);
+    padding:0.3rem 0.7rem;
+}
 
 /* other @'s */
 /* majority of transitions */
@@ -686,17 +768,21 @@ html, body {
 
 .container-fluid .cardrow .card .card-pop-up .card-pop-up-info button {
     grid-column: 1;
-    grid-row: 3;
+    grid-row: 2 /span 2;
 }
 
 .container-fluid .cardrow .card .card-pop-up .card-pop-up-info .original-price {
-    grid-column: 2 /span 2;
-    grid-row: 2;
+    position: absolute;
+    right: 0.5rem;
+    top: 35%;
+    padding-top: 0;
+    padding-bottom: 1rem;
 }
 
 .container-fluid .cardrow .card .card-pop-up .card-pop-up-info .disscount-price {
     grid-column: 2 /span 2;
-    grid-row: 3;
+    grid-row: 2;
+    padding-top: 0;
     text-align: end;
 }
 
@@ -816,10 +902,10 @@ html, body {
 
 /* pop up info/text */
 .container-fluid .cardrow .card .card-pop-up .card-pop-up-info{
-    display: block;
-    position: absolute;
+    position: relative;
     top:0;
     transition: top 300ms ease-in-out;
+    gap:0;
 }
 
 .container-fluid .cardrow .card:hover .card-pop-up .card-pop-up-info {
@@ -827,12 +913,17 @@ html, body {
 }
 
 .container-fluid .cardrow .card .card-pop-up .card-pop-up-info h4 {
+    grid-column: 1 / span 3;
+    grid-row: 1 ;
     font-size: var(--font-size-16);
     padding-top: 0rem;
-    padding-bottom: 0.7rem;
+    padding-bottom: 0rem;
 }
 
 .container-fluid .cardrow .card .card-pop-up .card-pop-up-info button {
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 0.7rem;
     font-size: var(--font-size-14);
     margin-left: 1rem;
     margin-bottom: 0;
@@ -849,14 +940,28 @@ html, body {
 }
 
 .container-fluid .cardrow .card .card-pop-up .card-pop-up-info .original-price {
+    position: static;
+    grid-column: 1;
+    grid-row: 3;
     font-size: var(--font-size-14);
     text-align: left;
     text-decoration: line-through;
-    margin-top:0.5rem;
+    padding-top:0.5rem;
+    padding-bottom: 0;
 }
 
 .container-fluid .cardrow .card .card-pop-up .card-pop-up-info .disscount-price {
+    grid-column: 1;
+    grid-row: 4;
+    margin-top: 0rem;
     text-align: left;
+}
+
+.container-fluid .cardrow .card .card-pop-up .card-pop-up-info .featured-star-rating {
+    position: static;
+    grid-column: 3;
+    grid-row: 4;
+    height:2rem;   
 }
 
 /* options and availability */
