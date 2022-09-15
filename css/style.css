@@ -380,11 +380,11 @@ html, body {
 
 /* new arrivals and featured products */
 /* card*/
-.container .cardrow {
+.card-container .cardrow {
     display:block;
 }
 
-.container .cardrow .card {
+.container-fluid .cardrow .card {
     margin: 2rem 1rem;
     position: relative;
     border-radius: var(--border-radius-small);
@@ -393,12 +393,12 @@ html, body {
     background-color: var(--color-gray-3);
 }
 
- .container .cardrow .card img {
+.container-fluid .cardrow .card img {
     height: 50vw;
 }
 
 /* pop up */
- .container .cardrow .card .card-pop-up {
+.container-fluid .cardrow .card .card-pop-up {
     position:relative;
     background-color: var(--color-theme-dark);
     bottom: 0;
@@ -408,7 +408,7 @@ html, body {
 }
 
 /* pop up info/text */
- .container .cardrow .card .card-pop-up .card-pop-up-info{
+.container-fluid .cardrow .card .card-pop-up .card-pop-up-info{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 18px 18px 18px 18px;
@@ -418,7 +418,7 @@ html, body {
 }
 
 
- .container .cardrow .card .card-pop-up .card-pop-up-info h4 {
+.container-fluid .cardrow .card .card-pop-up .card-pop-up-info h4 {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
     width: 100%;
@@ -428,7 +428,7 @@ html, body {
     margin-top: 1rem;
 }
 
-.container .cardrow .card .card-pop-up .card-pop-up-info button {
+.container-fluid .cardrow .card .card-pop-up .card-pop-up-info button {
     grid-column: 1;
     grid-row: 3 / span 2;
     height: 2rem;
@@ -439,11 +439,11 @@ html, body {
     margin-bottom: 1rem;
 }
 
-.container .cardrow .card .card-pop-up .card-pop-up-info p {
+.container-fluid .cardrow .card .card-pop-up .card-pop-up-info p {
     margin:0.3rem 1rem;
 }
 
-.container .cardrow .card .card-pop-up .card-pop-up-info .original-price {
+.container-fluid .cardrow .card .card-pop-up .card-pop-up-info .original-price {
     grid-column: 3;
     grid-row: 2;
     font-size: 0.7rem;
@@ -452,7 +452,7 @@ html, body {
     text-decoration: line-through;
 }
 
-.container .cardrow .card .card-pop-up .card-pop-up-info .disscount-price {
+.container-fluid .cardrow .card .card-pop-up .card-pop-up-info .disscount-price {
     grid-column: 3;
     grid-row: 3;
     margin-bottom: 1rem;
@@ -460,7 +460,7 @@ html, body {
     font-size: var(--font-size-16);
 }
 
-.container .cardrow .card .card-pop-up .card-pop-up-info .featured-star-rating {
+.container-fluid .cardrow .card .card-pop-up .card-pop-up-info .featured-star-rating {
     grid-column: 2;
     grid-row:3;
     font-size: 0.7rem;
@@ -471,7 +471,7 @@ html, body {
 }
 
 /* options and availability */
-.container .cardrow .card .options-availability {
+.container-fluid .cardrow .card .options-availability {
     position: absolute;
     background-color:var(--color-white);
     border: 1px var(--color-gray-2) solid;
@@ -482,20 +482,20 @@ html, body {
     border-radius: var(--border-radius-meduim);
 }
 
-.container .cardrow .card .options-availability a {
+.container-fluid .cardrow .card .options-availability a {
     text-decoration: none;
     color: var(--color-dark);
 }
 
-.container .cardrow .card .options-availability li {
+.container-fluid .cardrow .card .options-availability li {
     margin: 0.3rem;
 }
 
-.container .cardrow .card .options-availability .available {
+.container-fluid .cardrow .card .options-availability .available {
     color: var(--color-theme);
 }
 
-.container .cardrow .card .options-availability .not-available {
+.container-fluid .cardrow .card .options-availability .not-available {
     color: rgb(196, 89, 89);
 }
 
@@ -660,47 +660,53 @@ html, body {
 }
 
 /* new arrivals */
-.container .cardrow {
+.container-fluid .cardrow {
     display: flex;
     justify-content: center;
 
 }
 
-.container .cardrow .card .card-background {
+.container-fluid .cardrow .card .card-background {
     flex:1;
 }
 
-.container .cardrow .card img {
+.container-fluid .cardrow .card img {
     height: 30vw;
 }
 
-.container .cardrow .card .card-pop-up .card-pop-up-info{
+.container-fluid .cardrow .card .card-pop-up .card-pop-up-info{
     color: var(--color-white);
 
 }
 
-.container .cardrow .card .card-pop-up .card-pop-up-info h4 {
+.container-fluid .cardrow .card .card-pop-up .card-pop-up-info h4 {
     grid-column: 1 / span 3;
-    grid-row: 1 /span 2;
+    grid-row: 1;
 }
 
-.container .cardrow .card .card-pop-up .card-pop-up-info button {
-    grid-row: 3 / span 2;
-}
-
-.container .cardrow .card .card-pop-up .card-pop-up-info .original-price {
-    grid-column: 2;
+.container-fluid .cardrow .card .card-pop-up .card-pop-up-info button {
+    grid-column: 1;
     grid-row: 3;
 }
 
-.container .cardrow .card .card-pop-up .card-pop-up-info .disscount-price {
-    grid-column: 2;
+.container-fluid .cardrow .card .card-pop-up .card-pop-up-info .original-price {
+    grid-column: 2 /span 2;
+    grid-row: 2;
+}
+
+.container-fluid .cardrow .card .card-pop-up .card-pop-up-info .disscount-price {
+    grid-column: 2 /span 2;
     grid-row: 3;
     text-align: end;
-    margin-right: 1rem;
 }
 
-.container .cardrow .card .card-pop-up .card-pop-up-info {
+.container-fluid .cardrow .card .card-pop-up .card-pop-up-info .featured-star-rating {
+    position: absolute;
+    top:-1.5rem;
+    right: 1rem;
+}
+
+.container-fluid .cardrow .card .card-pop-up .card-pop-up-info {
     grid-column: 1;
     grid-row: 3;
 }
@@ -793,68 +799,68 @@ html, body {
 }
 
  /* new arrivals */ 
-.container .cardrow .card img {
+.container-fluid .cardrow .card img {
     height: 100%;
 }
 
-.container .cardrow .card .card-pop-up {
+.container-fluid .cardrow .card .card-pop-up {
     position:absolute;
     height: 15%;
     opacity: 90%;
     transition: height 300ms ease-in-out;
 }
 
-.container .cardrow .card:hover .card-pop-up {
+.container-fluid .cardrow .card:hover .card-pop-up {
     height: 100%;
 }
 
 /* pop up info/text */
- .container .cardrow .card .card-pop-up .card-pop-up-info{
+.container-fluid .cardrow .card .card-pop-up .card-pop-up-info{
     display: block;
     position: absolute;
     top:0;
     transition: top 300ms ease-in-out;
 }
 
-.container .cardrow .card:hover .card-pop-up .card-pop-up-info {
+.container-fluid .cardrow .card:hover .card-pop-up .card-pop-up-info {
     top:55%;
 }
 
-.container .cardrow .card .card-pop-up .card-pop-up-info h4 {
+.container-fluid .cardrow .card .card-pop-up .card-pop-up-info h4 {
     font-size: var(--font-size-16);
     padding-top: 0rem;
     padding-bottom: 0.7rem;
 }
 
-.container .cardrow .card .card-pop-up .card-pop-up-info button {
+.container-fluid .cardrow .card .card-pop-up .card-pop-up-info button {
     font-size: var(--font-size-14);
     margin-left: 1rem;
     margin-bottom: 0;
 }
 
-.container .cardrow .card .card-pop-up .card-pop-up-info button:hover {
+.container-fluid .cardrow .card .card-pop-up .card-pop-up-info button:hover {
     color: var(--color-theme);
     border: 1px var(--color-theme) solid;
 }
 
-.container .cardrow .card .card-pop-up .card-pop-up-info p {
+.container-fluid .cardrow .card .card-pop-up .card-pop-up-info p {
     margin-top: 0;
     margin-left: 1rem;
 }
 
-.container .cardrow .card .card-pop-up .card-pop-up-info .original-price {
+.container-fluid .cardrow .card .card-pop-up .card-pop-up-info .original-price {
     font-size: var(--font-size-14);
     text-align: left;
     text-decoration: line-through;
     margin-top:0.5rem;
 }
 
-.container .cardrow .card .card-pop-up .card-pop-up-info .disscount-price {
+.container-fluid .cardrow .card .card-pop-up .card-pop-up-info .disscount-price {
     text-align: left;
 }
 
 /* options and availability */
-.container .cardrow .card .options-availability {
+.container-fluid .cardrow .card .options-availability {
     position: absolute;
     top:1rem;
     right: -5rem;
@@ -863,11 +869,11 @@ html, body {
     transition: right 500ms ease-in-out;
 }
 
-.container .cardrow .card:hover .options-availability {
+.container-fluid .cardrow .card:hover .options-availability {
     right:1rem;
 }
 
-.container .cardrow .card .options-availability a:hover {
+.container-fluid .cardrow .card .options-availability a:hover {
     color: var(--color-theme);
 }
 
