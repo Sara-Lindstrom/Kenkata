@@ -647,6 +647,8 @@ html, body {
     padding:0.3rem 0.7rem;
 }
 
+
+
 /* other @'s */
 /* majority of transitions */
 @media (hover:hover) {
@@ -879,6 +881,28 @@ html, body {
     background-color: var(--color-white);
     color: var(--color-theme);
     padding:0.3rem 0.7rem;
+}
+
+/* top sellers */
+.top-sellers {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: auto;
+}
+
+.top-sellers .top-seller-grid-vertical {
+    grid-column: 1;
+    grid-row: 1
+}
+
+.top-sellers .top-seller-grid-top {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.top-sellers .top-seller-grid-bottom {
+    grid-column: 2;
+    grid-row: 2;
 }
 
 }
