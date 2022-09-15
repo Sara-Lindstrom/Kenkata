@@ -857,7 +857,7 @@ html, body {
     width: 4rem;
     margin-right: 1rem;
     margin-bottom: 2rem;
-}
+} 
 
 .flash-sale-border .count-down .circle-box .time {
     font-size: var(--font-size-18);
@@ -1044,7 +1044,7 @@ html, body {
 .background-banner .container {
     max-height: max-content;
     justify-content: space-between;
-    height: 20rem;
+    height: 17rem;
     margin: auto;
 }
 
@@ -1053,7 +1053,7 @@ html, body {
     margin-left: 6rem;
     padding:0;
     height: 100%;
-    max-width: 15rem;
+    max-width: 13rem;
     position: relative;
 }
 
@@ -1067,20 +1067,20 @@ html, body {
 
 }
 
-.background-banner .container .green-band h6 {
-    font-size:var(--font-size-60);
+.background-banner .container .green-band .green-band-info h6 {
+    font-size:var(--font-size-36);
 }
 
-.background-banner .container .green-band span {
-    font-size: var(--font-size-36);
+.background-banner .container .green-band .green-band-info span {
+    font-size: var(--font-size-24);
 }
 
-.background-banner .container .green-band p{
+.background-banner .container .green-band .green-band-info p{
     font-size: var(--font-size-14);
     margin-top: 0.5rem;
 }
 
-.background-banner .container .green-band button {
+.background-banner .container .green-band .green-band-info button {
     font-size: var(--font-size-14);
     margin-top: 1rem;
 }
@@ -1100,11 +1100,53 @@ html, body {
     height: 100%;
     max-width:100%;
     margin:1rem;
+    font-size: 0.8rem;
 }
 
-.background-banner .container .banner-info .button {
-    position: relative;
-    left: 70%;
+.background-banner .container .banner-info button {
+    font-size: var(--font-size-14);
+    margin-left: 1rem;
 }
+
+/* flash sale */
+.flash-sale-border {
+    margin-top: 3rem;
+    height: 17rem;
+    margin-bottom: 3rem;
+}
+
+.flash-sale-border .green-half-band {
+    height: 70%;
+    margin-left: 11.5rem;
+    min-width: 13rem;
+    padding:1rem;
+}
+
+.flash-sale-border .green-half-band h4 {
+    font-size: var(--font-size-36);
+    margin:0;
+}
+
+.flash-sale-border .green-half-band p {
+    font-size:0.8rem;
+    font-weight: var(--font-weight-medium);
+}
+
+.flash-sale-border .count-down {
+    margin-left: 0rem;
+}
+
+.flash-sale-border .count-down .circle-box {
+    margin-bottom: 6rem;
+    margin-right: 2rem;
+}
+
+.shop-now {
+    font-size: var(--font-size-14);
+    bottom:32%;
+    right:32.5%;
+    padding:0.5rem 1.2rem;
+}
+
 
 }
