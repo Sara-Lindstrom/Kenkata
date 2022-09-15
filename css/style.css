@@ -514,7 +514,12 @@ html, body {
     flex:1;
     background-color: var(--color-theme);
     color: var(--color-white);
-    padding: 1rem 0;
+    max-width: fit-content;
+    margin-left: 1rem;
+}
+
+.background-banner .container .green-band .green-band-info {
+    padding: 2rem 1rem;
 }
 
 .background-banner .container .green-band .green-band-info h6 {
@@ -560,6 +565,7 @@ html, body {
 /* flash sale */
 .flash-sale-border{
     background-color:var(--color-theme-dark);
+    width: 100%;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -615,7 +621,7 @@ html, body {
     font-size: 1rem;
     color: var(--color-theme);
     font-weight: var(--font-weight-bold);
-}
+} 
 
 .flash-sale-border .count-down .circle-box p {
     position: absolute;
@@ -687,6 +693,7 @@ html, body {
     transition: all 500ms;
 }
 
+/* Main */
 /* showcase */
 .showcase {
     padding: 0;
@@ -800,8 +807,13 @@ html, body {
 /* new costumer disscount */
 .background-banner .container{
     max-height: 10rem;
+    margin-left:2rem;
 }
 
+.background-banner .container .green-band{
+    margin-right: 3rem;
+    margin-left: 0;
+}
 .background-banner .container .banner-info {
     flex:2;
     display: flex;
@@ -820,9 +832,55 @@ html, body {
 }
 
 .background-banner .container .banner-info button {
-    margin-left: 1rem;
+    margin-left: 3rem;
 
 }
+
+/* flash sale */
+.flash-sale-border{
+    height: 10rem;
+}
+
+.flash-sale-border .green-half-band {
+    padding: 1rem 2rem;
+    margin-left: 3rem;
+    max-width: fit-content;
+    height: 80%;
+}
+
+.flash-sale-border .count-down {
+    max-width: max-content;
+}
+
+.flash-sale-border .count-down .circle-box {
+    height: 4rem;
+    width: 4rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+}
+
+.flash-sale-border .count-down .circle-box .time {
+    font-size: var(--font-size-18);
+}
+
+.flash-sale-border .count-down .circle-box p {
+    font-size: 0.7rem;
+    padding: 0 0.5rem;
+}
+
+.shop-now {
+    position: absolute;
+    font-size: 1rem;
+    bottom:10%;
+    right: 31%;
+    border-radius: var(--border-radius-meduim);
+    border: none;
+    font-weight: var(--font-weight-bold);
+    background-color: var(--color-white);
+    color: var(--color-theme);
+    padding:0.3rem 0.7rem;
+}
+
 }
 
 @media(min-width:992px) {
@@ -987,6 +1045,7 @@ html, body {
     max-height: max-content;
     justify-content: space-between;
     height: 20rem;
+    margin: auto;
 }
 
 .background-banner .container .green-band {
@@ -999,26 +1058,31 @@ html, body {
 }
 
 .background-banner .container .green-band .green-band-info{
-    position: relative;
-    top:35%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    padding:0;
+    margin:0;
 
 }
 
 .background-banner .container .green-band h6 {
-    font-size:var(--font-size-36);
+    font-size:var(--font-size-60);
 }
 
 .background-banner .container .green-band span {
-    font-size: var(--font-size-24);
+    font-size: var(--font-size-36);
 }
 
 .background-banner .container .green-band p{
     font-size: var(--font-size-14);
-    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 .background-banner .container .green-band button {
     font-size: var(--font-size-14);
+    margin-top: 1rem;
 }
 
 .background-banner .container .banner-info {
