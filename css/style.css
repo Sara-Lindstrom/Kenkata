@@ -651,7 +651,37 @@ html, body {
     padding:0.3rem 0.7rem;
 }
 
+/* subscribe banner */
+.subscribe-banner {
+    background-color:var(--color-gray-3);
+}
 
+.subscribe-banner .container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/* subscribe info */
+.subscribe-banner .container .subscribe-info {
+    padding: 1rem;
+}
+
+.subscribe-banner .container .subscribe-info h6{
+    font-family: var(--font-play);
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-theme-dark);
+    margin-top:1rem;
+}
+
+.subscribe-banner .container .subscribe-info span {
+    color: var(--color-theme);
+}
+
+.subscribe-banner .container .subscribe-info p {
+    font-size: 0.8rem;
+}
 
 /* other @'s */
 /* majority of transitions */
@@ -943,6 +973,31 @@ html, body {
     height: 30%;
 }
 
+/* subscribe banner */
+.subscribe-banner{
+    margin-top:3rem;
+}
+
+.subscribe-banner .container {
+    text-align: left;
+}
+
+/* subscribe info */
+.subscribe-banner .container .subscribe-info h6{
+    font-size: var(--font-size-24);
+}
+
+.subscribe-banner .container .subscribe-info p {
+    font-size: var(--font-size-14);
+}
+
+/* subscribe gray box */
+.subscribe-banner .container .gray-box {
+    background-color: var(--color-gray-1);
+    width: 50vw;
+}
+
+
 }
 
 @media(min-width:992px) {
@@ -1215,7 +1270,6 @@ html, body {
 /* top sellers */
 .container-fluid .top-sellers {
     margin: 2rem 10rem;
-    margin-bottom: 5rem;
 }
 
 /* top sellers vertical card */
@@ -1248,6 +1302,8 @@ html, body {
 
 .container-fluid .top-sellers .top-seller-grid-vertical .card-pop-up .card-pop-up-info button {
     margin-top:1.2rem;
+    padding:0 1rem;
+    max-width: max-content;
 }
 
 /* top sellers top card */
@@ -1274,6 +1330,11 @@ html, body {
 
 .container-fluid .top-sellers .top-seller-grid-top:hover .card-pop-up  .card-pop-up-info{
     top:40%;
+}
+
+.container-fluid .top-sellers .top-seller-grid-top .card-pop-up .card-pop-up-info button {
+    padding:0 1rem;
+    max-width: max-content;
 }
 
 /* top sellers bottom card */
@@ -1306,4 +1367,35 @@ html, body {
 .container-fluid .top-sellers .top-seller-grid-bottom:hover .card-pop-up  .card-pop-up-info{
     top:40%;
 }
+
+.container-fluid .top-sellers .top-seller-grid-bottom .card-pop-up .card-pop-up-info button {
+    padding:0 1rem;
+    max-width: max-content;
+}
+
+/* subscribe banner */
+
+.subscribe-banner .container {
+    padding: 0 6rem;
+    height: 15rem;
+}
+
+.subscribe-banner .container .subscribe-info {
+    align-self: center;
+    width: 30vw;
+}
+
+.subscribe-banner .container .subscribe-info h6{
+    font-size: var(--font-size-24);
+}
+
+.subscribe-banner .container .subscribe-info p{
+    font-size: var(--font-size-14);
+}
+
+.subscribe-banner .container .gray-box {
+    width: 30vw;
+    height:100%;
+}
+
 }
