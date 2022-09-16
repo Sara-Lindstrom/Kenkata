@@ -566,41 +566,46 @@ html, body {
 .flash-sale-border{
     background-color:var(--color-theme-dark);
     width: 100%;
-    position: relative;
+}
+
+.flash-sale-border .container {
     display: flex;
     justify-content: space-between;
 }
 
 /* green band with content*/
-.flash-sale-border .green-half-band {
+.flash-sale-border .container .green-half-band {
     background-color: var(--color-theme);
     height:50%;
-    margin: 0 2rem;
+    margin-left: 1rem;
+    margin-right: 2rem;
     padding: 0.5rem;
     text-align: center;
     font-weight: var(--font-weight-bold);
 }
 
-.flash-sale-border .green-half-band h4 {
-    font-size: var(--font-size-18);
+.flash-sale-border .container .green-half-band h4 {
+    font-size: var(--font-size-16);
     color: var(--color-white);
     margin-top: 1rem;
 }
 
-.flash-sale-border .green-half-band p {
-    font-size: 0.7rem;
+.flash-sale-border .container .green-half-band p {
+    font-size: 0.5rem;
     color: var(--color-white);
     font-weight: var(--font-weight-bold);
 }
 
 /* count down circles */
-.flash-sale-border .count-down {
+.flash-sale-border .container .count-down {
     flex:2;
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
+    position: relative;
 }
 
-.flash-sale-border .count-down .circle-box {
+.flash-sale-border .container .count-down .circle-box {
     position: relative;
     height: 2.8rem;
     width: 2.8rem;
@@ -608,12 +613,11 @@ html, body {
     outline: 2px var(--color-theme) dotted;
     background-color: var(--color-white);
     text-align: center;
-    margin-right: 0.5rem;
     margin-bottom: 1.5rem;
 }
 
 /* transform:translate from https://blog.hubspot.com/website/center-div-css#center-div-horizontally-vertically */
-.flash-sale-border .count-down .circle-box .time {
+.flash-sale-border .container .count-down .circle-box .time {
     position: relative;
     top: 40%;
     left: 50%;
@@ -623,7 +627,7 @@ html, body {
     font-weight: var(--font-weight-bold);
 } 
 
-.flash-sale-border .count-down .circle-box p {
+.flash-sale-border .container .count-down .circle-box p {
     position: absolute;
     top: 70%;
     left: 50%;
@@ -631,14 +635,14 @@ html, body {
     color:var(--color-theme-dark);
     font-weight: var(--font-weight-medium);
     font-size: 0.5rem;
-    padding: 0 0.2rem;
 }
 
-.shop-now {
+.flash-sale-border .container .count-down .shop-now {
     position: absolute;
     font-size: 0.7rem;
-    bottom:10%;
-    right: 21.5%;
+    bottom:0;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border-radius: var(--border-radius-meduim);
     border: none;
     font-weight: var(--font-weight-bold);
@@ -844,38 +848,35 @@ html, body {
     margin-bottom: 2rem;
 }
 
-.flash-sale-border .green-half-band {
+.flash-sale-border .container .green-half-band {
     padding: 1rem 2rem;
-    margin-left: 3rem;
+    margin-left: 0;
     max-width: fit-content;
     height: 80%;
 }
 
-.flash-sale-border .count-down {
-    max-width: max-content;
+.flash-sale-border .container .count-down {
+    max-width: fit-content;
+    height: 10rem;
 }
 
-.flash-sale-border .count-down .circle-box {
+.flash-sale-border .container .count-down .circle-box {
     height: 4rem;
     width: 4rem;
-    margin-right: 1rem;
-    margin-bottom: 2rem;
+    margin:1rem;
+    margin-bottom: 3rem;
 } 
 
-.flash-sale-border .count-down .circle-box .time {
+.flash-sale-border .container .count-down .circle-box .time {
     font-size: var(--font-size-18);
 }
 
-.flash-sale-border .count-down .circle-box p {
+.flash-sale-border .container .count-down .circle-box p {
     font-size: 0.7rem;
-    padding: 0 0.5rem;
 }
 
-.shop-now {
-    position: absolute;
+.flash-sale-border .container .count-down .shop-now {
     font-size: 1rem;
-    bottom:10%;
-    right: 31%;
     border-radius: var(--border-radius-meduim);
     border: none;
     font-weight: var(--font-weight-bold);
@@ -892,7 +893,6 @@ html, body {
     gap: 1rem;
     margin-top: 2rem;
     padding: 0 1rem;
-    margin-bottom: 5rem;
 }
 
 .container-fluid .top-sellers .top-seller-grid-vertical {
@@ -1177,38 +1177,86 @@ html, body {
     margin-bottom: 3rem;
 }
 
-.flash-sale-border .green-half-band {
+.flash-sale-border .container .green-half-band {
     height: 70%;
-    margin-left: 11.5rem;
     min-width: 13rem;
     padding:1rem;
+    margin-left: 6rem;
 }
 
-.flash-sale-border .green-half-band h4 {
+.flash-sale-border .container .green-half-band h4 {
     font-size: var(--font-size-36);
     margin:0;
 }
 
-.flash-sale-border .green-half-band p {
+.flash-sale-border .container .green-half-band p {
     font-size:0.8rem;
     font-weight: var(--font-weight-medium);
 }
 
-.flash-sale-border .count-down {
-    margin-left: 0rem;
+.flash-sale-border .container .count-down {
+    margin-right: 6rem;
+    height: 15rem;
 }
 
-.flash-sale-border .count-down .circle-box {
-    margin-bottom: 6rem;
+.flash-sale-border .container .count-down .circle-box {
+    height: 5rem;
+    width: 5rem;
+    margin-bottom: 3rem;
     margin-right: 2rem;
 }
 
-.shop-now {
+.flash-sale-border .container .count-down .shop-now {
     font-size: var(--font-size-14);
-    bottom:32%;
-    right:32.5%;
-    padding:0.5rem 1.2rem;
+    padding:0.5rem 1.5rem;
+    margin-right: 0.5rem;
 }
 
+/* top sellers */
+.container-fluid .top-sellers {
+    margin-bottom: 5rem;
+    margin: 0 10rem;
+}
 
+.container-fluid .top-sellers .top-seller-grid-vertical .card-background img {
+    max-height: 5rem;
+}
+
+.container-fluid .top-sellers .top-seller-grid-vertical .card-pop-up {
+    height: 7%;
+}
+
+.container-fluid .top-sellers:hover .top-seller-grid-vertical .card-pop-up  .card-pop-up-info{
+    max-height: 50%;
+}
+
+.container-fluid .top-sellers .top-seller-grid-top {
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+    margin:0;
+    padding:0;
+}
+
+.container-fluid .top-sellers .top-seller-grid-top img {
+    max-height: 100%;
+}
+
+.container-fluid .top-sellers .top-seller-grid-top .card-pop-up {
+    height: 30%;
+}
+
+.container-fluid .top-sellers .top-seller-grid-bottom {
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+    margin:0;
+    padding:0;
+}
+
+.container-fluid .top-sellers .top-seller-grid-bottom img {
+    max-height: 100%;
+}
+
+.container-fluid .top-sellers .top-seller-grid-bottom .card-pop-up {
+    height: 30%;
+}
 }
