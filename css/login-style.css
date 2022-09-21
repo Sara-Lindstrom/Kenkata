@@ -135,6 +135,8 @@ html, body {
     padding:2rem 0.7rem;
 }
 
+/* searchbar */
+
 /* my account */
 .top-main-menu .my-account a {
     color:var(--color-theme-dark);
