@@ -73,7 +73,7 @@
                     <a href="index.html"><img src="../img/Logo.svg" alt:"Kentaka"></a>
                 </div>
 
-                <div class="serach"></div>
+                <div class="search"></div>
 
                 <!--  my account -->
                 <div class="my-account">
@@ -125,30 +125,32 @@
     <main>
         <!-- login and register -->
         <div class="container">
-            <div class="login-register">
-                <div class="card login">
-                    <!-- Login input. input types from w3schools -->
-                    <div class="login-input">
-                        <h2>LOGIN</h2>
+            <div class="card form-theme">
+                <!-- Login input. -->
+                <h2>LOGIN</h2>
+                
+                <form id="signInForm">
 
-                        <p>Email adress <span>*</span></p>
-                        <input type="email">
+                    <label for="signInEmail" class="label-theme">Email adress <span class="required">*</span></label>
+                    <input id="signInEmail" type="email" class="input-theme" required>
 
-                        <P>Password <span>*</span></P>
-                        <input type="password">
-                    </div>
+                    <label for="signInPassword" class="label-theme">Password <span class="required">*</span></label>
+                    <input id="signInPassword" type="password" class="input-theme" required>
 
                     <!-- bootstrap button -->
                     <!-- login button -->
-                    <button class="btn btn-secondary">LOG IN</button>
+                    <button type="submit" class="btn">LOG IN</button>
 
                     <!-- login help -->
                     <!-- bootstrap checkbox -->
                     <div class="login-help">
-                        <div class="remember-me"><input type="checkbox" class="checkbox" aria-label="Checkbox for following text input"><span>Remember me</span></div>
+                        <div class="remember-me">
+                            <input id="rememberMe" type="checkbox" class="checkbox">
+                            <label for="rememberMe" class="label-theme">Remember Me</label>
+                        </div>
                         <a href="#" class="lost-password">Lost your password?</a>
                     </div>
-
+                    
                     <!-- Login social media -->
                     <div class="or-login-with">
                         <div class="line"></div>
@@ -160,36 +162,35 @@
                         <a href="#"><img src="../img/Facebook-login.svg"></a>
                         <a href="#"><img src="../img/Google-login.svg"></a>
                     </div>
-                </div>
+                </form>
+            </div>
 
-                <!-- register -->
-                <div class="card register login">
+            <!-- register -->
+            <div class="card card-vertical form-theme">
 
-                    <!-- Register info. -->
-                    <div class="login-input">
-                        <h2>REGISTER</h2>
-                        <p>Registrering for this site allows you to access your order status and history. Just fill in the fields below, and we'll get a new account set up for you in no time. We only ask you for information necessary to make the purchase process faster and easier.</p>
+                <!-- Register info. -->
+                    <h2>REGISTER</h2>
+                    <p class="muted-text">Registrering for this site allows you to access your order status and history. Just fill in the fields below, and we'll get a new account set up for you in no time. We only ask you for information necessary to make the purchase process faster and easier.</p>
 
-                        <p>Firt name <span>*</span></p>
-                        <input type="firstname">
+                <form id="signUpForm">
 
-                        <p>Last name <span>*</span></p>
-                        <input type="lastname">
+                    <label for="signUpFirstName" class="label-theme">First name <span class="required">*</span></label>
+                    <input id="signUpFirstName" type="firstname" class="input-theme" required>
 
-                        <p>Email adress <span>*</span></p>
-                        <input type="email">
+                    <label for="signUpLastName" class="label-theme">Last name <span class="required">*</span></label>
+                    <input id="signUpLastName" type="lastname" class="input-theme" required>
 
-                        <P>Password <span>*</span></P>
-                        <input type="password">
+                    <label for="signUpEmail" class="label-theme">Email adress <span class="required">*</span></label>
+                    <input id="signUpEmail" type="email" class="input-theme" required>
 
-                        <p>Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <a href="#">privacy policy.</a></p>
-                        
-                    </div>
+                    <label for="signUpPassword" class="label-theme">Password <span class="required">*</span></label>
+                    <input id="signUpPassword" type="password" class="input-theme" required>
 
-                    <button class="btn btn-secondary">REGISTER</button>
+                    <p>Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <a href="#">privacy policy.</a></p>
 
-                </div>
+                    <button type="submit" class="btn">REGISTER</button>
 
+                </form>
             </div>
         </div>
     </main>

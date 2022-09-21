@@ -53,6 +53,10 @@ html, body {
     font-weight: var(--font-weight-regular);
 }
 
+.required {
+    color: var(--color-theme);
+}
+
 /* header */
 /* green top menu */
 .top-menu {
@@ -106,6 +110,12 @@ html, body {
 /* right side links */
 .top-menu .top-menu-links a {
     margin-right: 1.2rem; 
+    color:var(--color-white);
+}
+
+.top-menu .top-menu-links a:hover {
+    color:var(--color-theme-dark);
+    text-decoration: none;
 }
 
 .top-menu .top-menu-links .social-media a {
@@ -216,13 +226,14 @@ html, body {
     font-size: 1rem;
 }
 
-.location-bar a {
+.location-bar .container a {
     text-decoration: none;
     color: var(--color-white);
 }
 
-.location-bar a:hover {
+.location-bar .container a:hover {
     color:var(--color-dark);
+    text-decoration: none;
 }
 
 
@@ -246,130 +257,140 @@ html, body {
 }
 
 /* login and register */
-/* login info */
 
-.container {
-    justify-content: space-between;
+.container a {
+    text-decoration: none;
+    color: var(--color-theme);
 }
 
-/* login */
+.container a:hover {
+    color: var(--color-theme-dark);
+    text-decoration: underline;
+}
 
-.container .login-register .card {
-    background: var(--color-gray-3);
+.container .form-theme {
+    background: var(--color-gray-4);
     color:var(--color-theme-dark);
     font-family: var(--font-roboto);
     border-radius: var(--border-radius-small);
     border: none;
     margin: 1rem 0;
-    padding:1rem;
-    flex:1;
+    padding:2rem;
 }
 
-/* login input */
-.container .login-register .login .login-input {
+/* card input */
+.container .form-theme {
+    margin-top: 2rem;
+}
+
+.container .form-theme h2 {
     font-size: var(--font-size-16);
 }
 
-.container .login-register .login .login-input p{
+.container .form-theme p {
     font-size: var(--font-size-14);
+    color: var(--color-theme-dark);
     margin-top: 1rem;
     margin-bottom: 0;
 }
 
-.container .login-register .login .login-input span {
-    color:var(--color-theme);
+.container .form-theme p.muted-text {
+    font-size: 0.8rem;
+    color: #777777;
+    margin-bottom: 1rem;
 }
 
-.container .login-register .login .login-input input {
+.container .form-theme .label-theme {
+    font-size: var(--font-size-14);
+    color: var(--color-theme-dark);
+    margin-top: 1rem;
+}
+
+.container .form-theme .input-theme {
     border:var(--color-gray-2);
     margin-bottom: 1rem;
     width: 100%;
-    outline:none;
+    padding: 0.6rem 0.8rem;
+    color: var(--color-theme-dark);
 }
 
-/* Login button */
-.container .login-register .login .btn {
+.container .form-theme input:focus {
+    outline:none;
+    box-shadow: 0 0 0.2rem 0 var(--color-gray-0);
+}
+
+/* button */
+.container .form-theme .btn {
     border-radius: var(--border-radius-meduim);
     background: var(--color-theme);
+    color:var(--color-white);
     border:none;
     margin: 1rem 0;
     width: 100%;
 }
 
-.container .login-register .login .btn:hover{
+.container .form-theme .btn:hover{
     color: var(--color-theme-dark);
 }
 
-/* login help */
-.container .login-register .login .login-help {
+/* help */
+.container .form-theme .login-help {
     display:flex;
     justify-content: space-between;
     font-size: 0.7rem;
 }
 
-.container .login-register .login .login-help .checkbox{
+.container .form-theme .login-help .remember-me .checkbox{
     filter:brightness(97%);
     margin-right:0.5rem;
 }
 
-
-.container .login-register .login .login-help .remember-me{
-    margin:0.5rem;
-}
-
-.container .login-register .login .login-help a{
-    text-decoration: none;
-    color: var(--color-theme);
-}
-.container .login-register .login .login-help a:hover {
+.container .form-theme .login-help .remember-me input[type=checkbox] {
+    width: initial;
     color: var(--color-theme-dark);
 }
 
-/* Login social media */
-.container .login-register .login .or-login-with{
+.container .form-theme .login-help .remember-me label {
+    margin:0;
+    font-size: 0.7rem;
+}
+
+/* social media */
+.container .form-theme .or-login-with{
     display: flex;
 }
 
-.container .login-register .login .or-login-with h3 {
+.container .form-theme .or-login-with h3 {
     text-align: center;
-    font-size: var(--font-size-16);
+    font-size: var(--font-size-14);
     flex: 1;
-    margin: 1rem 0;
+    max-width: max-content;
+    margin: 2rem 1rem;
 }
 
-.container .login-register .login .or-login-with .line {
+.container .form-theme .or-login-with .line {
     display:block;
-    color: rgb(196, 195, 195);
+    background-color: var(--color-gray-0);
     align-self: center;
-    border: 1px solid;
+    border: 1px var(--color-gray-0) solid;
     height: 1px;
     flex: 1;
 }
 
-.container .login-register .login .social-media-login{
+.container .form-theme .social-media-login{
     display:flex;
     justify-content: space-evenly;
 }
 
-.container .login-register .login .social-media-login img {
+.container .form-theme .social-media-login img {
     max-width: 10rem;
-    filter:brightness(95%);
+    transition: transform 300ms;
 }
 
-.container .login-register .login .social-media-login img:hover {
-    filter:brightness(110%);
+.container .form-theme .social-media-login img:hover {
+    transform: scale(1.1);
 }
 
-/* register */
-.container .login-register .register a {
-    text-decoration: none;
-    color: var(--color-theme);
-}
-
-/* register info */
-.container .login-register .register a:hover {
-    color: var(--color-theme-dark);
-}
 /* /main */
 /* footer */
 .footer {
@@ -388,6 +409,15 @@ html, body {
     font-size: 0.8rem;
     font-weight: var(--font-weight-regular);
     color: var(--color-white);
+}
+
+
+/* other @'s */
+/* majority of transitions */
+@media (hover:hover) {
+    a , button , .btn , img , .info-box , .category-title{       
+        transition:all 300ms;
+    }
 }
 
 /* responsive */
@@ -425,34 +455,54 @@ html, body {
 }
 
 /* login and register */
-.container .login-register .login .login-help {
+.container .form-theme .login-help {
     font-size: 1rem;
 }
 
-.container .login-register .login .social-media-login img {
+.container .form-theme .social-media-login img {
     max-width: fit-content;
 }
 
-.container .login-register .login .login-input .hidden-text {
+.container .form-theme .input-box .hidden-text {
     display:none;
+}
+
+.container .form-theme .login-help .remember-me label {
+    font-size: 1rem;
 }
 }
 
 @media (min-width:992px){
+
+/* Logotype, my account */
+.top-main-menu .container .logotype img{
+    transition: transform 300ms;
+}
+
+.top-main-menu .container .logotype:hover img {
+    transform: scale(1.1);
+}
+
+.top-main-menu .my-account span {
+    top:-1rem;
+    left:0.7rem;
+    transition: all 500ms;
+}
+
 /* login and register */
-.container .login-register {
+.container {
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     gap: 1rem;
 }
 
-.container .login-register .login {
+.container .form-theme {
     grid-column: 1/2;
     grid-row: span 1;
 }
 
-.container .login-register .register{
+.container .card-vertical{
     grid-column: 2/-1;
     grid-row: span 2;
 }
