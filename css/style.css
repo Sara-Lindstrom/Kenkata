@@ -1381,7 +1381,7 @@ html, body {
 }
 
 .container-fluid .top-sellers .top-seller-grid-vertical:hover .card-pop-up  .card-pop-up-info{
-    top:70%;
+    top: 70%;
 }
 
 /* :not kommande from https://stackoverflow.com/questions/29758957/how-to-make-a-css-transition-work-backwards */
@@ -1418,7 +1418,7 @@ html, body {
 }
 
 .container-fluid .top-sellers .top-seller-grid-top:hover .card-pop-up  .card-pop-up-info{
-    top:40%;
+    top: 40%;
 }
 
 .container-fluid .top-sellers .top-seller-grid-top .card-pop-up .card-pop-up-info button {
@@ -1455,7 +1455,7 @@ html, body {
 }
 
 .container-fluid .top-sellers .top-seller-grid-bottom:hover .card-pop-up  .card-pop-up-info{
-    top:40%;
+    top: 40%;
 }
 
 .container-fluid .top-sellers .top-seller-grid-bottom .card-pop-up .card-pop-up-info button {
@@ -1498,18 +1498,47 @@ html, body {
 }
 }
 
-@media(min-width:1200px) {
-    .container-fluid .top-sellers .card .top-seller-grid-vertical .card-pop-up-info {
-        margin-top: 1rem;
+@media (min-width:1500px){
+
+    .container-fluid .top-sellers .top-seller-grid-vertical .card-pop-up .card-pop-up-info {
+        top:15%;
     }
 
-    .container-fluid .top-sellers .card .top-seller-grid-top .card-pop-up-info {
-        margin-top: 1rem;
+    .container-fluid .top-sellers .top-seller-grid-vertical:hover .card-pop-up  .card-pop-up-info{
+        top: 80%;
     }
 
-    .container-fluid .top-sellers .card .top-seller-grid-bottom .card-pop-up-info {
-        margin-top: 1rem;
+    .container-fluid .top-sellers .top-seller-grid-vertical .card-pop-up .card-pop-up-info h4 {
+        font-size: var(--font-size-24);
+        margin-bottom: 1rem;
+    }
+
+    .container-fluid .top-sellers .top-seller-grid-top .card-pop-up .card-pop-up-info {
+        top:15%;
+    }
+
+    .container-fluid .top-sellers .top-seller-grid-top:hover .card-pop-up  .card-pop-up-info{
+        top: 55%;
+    }
+    
+    .container-fluid .top-sellers .top-seller-grid-top .card-pop-up .card-pop-up-info h4 {
+        font-size: var(--font-size-24);
+        margin-bottom: 1.5rem;
+    }
+
+    .container-fluid .top-sellers .top-seller-grid-bottom .card-pop-up .card-pop-up-info {
+        top:15%;
+    }
+
+    .container-fluid .top-sellers .top-seller-grid-bottom:hover .card-pop-up  .card-pop-up-info{
+        top: 55%;
+    }
+    
+    .container-fluid .top-sellers .top-seller-grid-bottom .card-pop-up .card-pop-up-info h4 {
+        font-size: var(--font-size-24);
+        margin-bottom: 1.5rem;
     }
 }
+
 
 
