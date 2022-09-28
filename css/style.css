@@ -160,6 +160,7 @@ html, body {
     top:5rem;
     border-radius:var(--border-radius-meduim);
     width: 95%;
+    max-width: 40rem;
     height:2rem;
 }
 
@@ -725,24 +726,24 @@ html, body {
 }
 
 /* subscribe form*/
+
 .subscribe-banner .container .subscribe-info .subscribe {
     position: relative;
-    height: 2.5rem;
 }
 
 .subscribe-banner .container .subscribe-info .subscribe #subscribeForm{
-    position: absolute;
+    position: relative;
     border-radius:var(--border-radius-meduim);
     font-weight: var(--font-weight-regular);
     font-size: 0.9rem;
     top:0;
     right: 0;
     width: 100%;
-    height:100%;
+    height:2.5rem;
 }
 
 .subscribe-banner .container .subscribe-info .subscribe input{
-    position: absolute;
+    position: relative;
     top: 0;
     right: 0;
     width: 100%;
@@ -763,6 +764,12 @@ html, body {
     color: var(--color-white);
     border-radius: var(--border-radius-meduim);
     padding: 0 1rem;
+}
+
+/* error message */
+.container .subscribe .error-message {
+    padding: 1rem 0;
+    color: rgb(240, 138, 138);
 }
 
 /* /main */

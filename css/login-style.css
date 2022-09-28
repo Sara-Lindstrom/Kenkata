@@ -144,6 +144,7 @@ html, body {
     top:5rem;
     border-radius:var(--border-radius-meduim);
     width: 95%;
+    max-width: 40rem;
     height:2rem;
 }
 
@@ -309,6 +310,12 @@ html, body {
     border: none;
     margin: 1rem 0;
     padding:2rem;
+}
+
+/* error message */
+.container .error-message {
+    margin: 1rem 0;
+    color: rgb(240, 138, 138)
 }
 
 /* card input */
