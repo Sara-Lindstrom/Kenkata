@@ -140,9 +140,10 @@ html, body {
 /* searchbar */
 .top-main-menu .container .search {
     position: absolute;
-    border-radius:var(--border-radius-meduim);
+    left:auto;
     top:5rem;
-    width: 100%;
+    border-radius:var(--border-radius-meduim);
+    width: 95%;
     height:2rem;
 }
 
@@ -171,7 +172,7 @@ html, body {
 .top-main-menu .my-account a {
     color:var(--color-theme-dark);
     text-decoration: none;
-    margin-left: 0.7rem;
+    margin-left: 0.5rem;
     position: relative;
 }
 
