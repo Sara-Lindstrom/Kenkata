@@ -588,6 +588,10 @@ html, body {
     border: none;
 }
 
+.background-banner .container .green-band .green-band-info button:hover {
+    color:var(--color-theme);
+}
+
 .background-banner .container .banner-info {
     flex:1;
     align-self: center;
@@ -602,6 +606,11 @@ html, body {
     font-size: 0.7rem;
     font-weight:var(--font-weight-bold);
 
+}
+
+.background-banner .container .banner-info button:hover {
+    background-color: var(--color-theme);
+    color: var(--color-theme-dark);
 }
 
 /* flash sale */
@@ -693,6 +702,11 @@ html, body {
     padding:0.3rem 0.7rem;
 }
 
+.flash-sale-border .container .count-down .shop-now:hover {
+    background-color: var(--color-theme);
+    color: var(--color-theme-dark);
+}
+
 /* subscribe banner */
 .subscribe-banner {
     background-color:var(--color-gray-3);
@@ -764,6 +778,10 @@ html, body {
     color: var(--color-white);
     border-radius: var(--border-radius-meduim);
     padding: 0 1rem;
+}
+
+.subscribe-banner .container .subscribe-info .subscribe button:hover{
+    color: var(--color-theme-dark);
 }
 
 /* error message */
