@@ -79,6 +79,21 @@ html, body {
     display:none;
 }
 
+/* pop-up on hover from: 
+https://stackoverflow.com/questions/4383148/is-it-possible-to-style-a-title-and-with-css-or-js
+https://stackoverflow.com/questions/22352618/css-before-after-content-with-title */
+.pop-up:hover::after{
+    content:attr(data-title);
+    position:absolute;
+    font-size: 0.8rem;
+    font-weight: var(--font-weight-regular);
+    right:3rem;
+    background-color: var(--color-theme);
+    color: var(--color-white);
+    padding: 0.1rem 0.3rem;
+    border-radius: 0.2rem;
+}
+
 
 /* green top menu */
 .top-menu {
@@ -532,6 +547,7 @@ html, body {
     margin: 0.3rem;
 }
 
+
 .container-fluid .cardrow .card .options-availability .available {
     color: var(--color-theme);
 }
@@ -845,11 +861,6 @@ html, body {
     padding: none;
 }
 
-/* browser, special offers */
-.top-under-menu .dropdown-theme button {
-    border-radius: 0;
-}
-
 /* Logotype, my account */
 .top-main-menu .my-account span {
     top:-1rem;
@@ -860,6 +871,11 @@ html, body {
 /* searchbar */
 .top-main-menu .container .search {
     width: 100%;
+}
+
+/* browser, special offers */
+.top-under-menu .dropdown-theme button {
+    border-radius: 0;
 }
 
 /* Main */
