@@ -1,0 +1,448 @@
+.html, body {
+    font-family: $font-roboto;
+    font-weight: $font-weight-regular;
+    color: $color-theme-dark;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 0.7rem;
+
+    @include md {
+        max-width: $breakpoint-md-max-width;
+    }
+    @include lg {
+        max-width: $breakpoint-lg-max-width;
+    }
+    @include xl {
+        max-width: $breakpoint-xl-max-width;
+    }
+    @include xxl {
+        max-width: $breakpoint-xxl-max-width;
+    }
+}
+
+.container-fluid {
+    max-width: 100vw;
+}
+
+// QUICK HELP
+.hidden-text{
+    display:none;
+
+    @include md {
+        display:inline;
+    }
+}
+
+.d-flex { display: flex;}
+.d-initial {display: initial;}
+
+// LINKS
+a {
+    text-decoration: none;
+    transition: color 300ms;
+}
+
+
+
+// BUTTONS
+.button {
+    font-family: $font-roboto;
+    font-size: $font-size-14;
+    padding: 0.5rem 1.5rem;
+    font-weight: $font-weight-regular;
+    text-decoration: none;
+}
+
+.b-light {
+    border-radius: $border-radius-meduim;
+    border: none;
+    background-color: $color-white;
+    color: $color-theme;
+    transition: background-color 300ms , color 300ms;
+
+    &:hover{
+        background-color: $color-theme;
+        color: $color-white;
+    }
+}
+
+.b-theme {
+    border-radius: $border-radius-meduim;
+    border: none;
+    background-color: $color-theme;
+    color: $color-white;
+    transition: color 300ms;
+
+    &:hover{
+        color: $color-dark;
+    }
+}
+
+.b-dark {
+    border-radius: $border-radius-meduim;
+    border: none;
+    background-color: $color-dark;
+    color: $color-white;
+    transition: color 300ms;
+
+    &:hover{
+        color: $color-theme;
+    }
+}
+
+// DROPDOWN
+.dropdown {
+    // dropdown button
+    .b-dropdown {
+        border: none;
+        background-color: $color-theme;
+        color: $color-white;
+        transition: color 300ms;
+        padding:none;
+    
+        &:hover {
+            color: $color-theme-dark;
+        }
+    
+    }
+
+    .dropdown-menu {
+        background-color: $color-theme;
+        border: none;
+
+        .dropdown-item {
+            color: $color-white;
+            transition: color 300ms;
+
+            &:hover {
+                background-color: $color-theme;
+                color: $color-theme-dark;
+            }
+        }
+    }
+}
+
+
+// SECTION TITLES
+.section-title {
+    padding: 2rem;
+    text-align: center;
+    margin:0 1rem;
+
+    h3{
+        font-family: $font-play;
+        font-size: $font-size-36;
+        color: $color-theme-dark;
+        font-weight: $font-weight-bold;
+
+        span {
+            color: $color-theme;
+            font-weight: $font-weight-bold;
+        }
+    }
+
+    img {
+        height: 1rem;
+        width: 20rem;
+        margin:1rem;
+        display:none;
+    
+        @include md {
+            display:inline;
+        }
+    }
+}
+
+// POP UP ON HOVER
+// from: 
+// https://stackoverflow.com/questions/4383148/is-it-possible-to-style-a-title-and-with-css-or-js
+// https://stackoverflow.com/questions/22352618/css-before-after-content-with-title 
+.pop-up:hover::after{
+    content:attr(data-title);
+    position:absolute;
+    font-size: 0.8rem;
+    font-weight: $font-weight-regular;
+    right:3rem;
+    background-color: $color-theme;
+    color: $color-white;
+    padding: 0.1rem 0.3rem;
+    border-radius: 0.2rem;
+}
+
+// CARDS
+.container-fluid {
+    .cardrow {
+        @include md {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 2rem 0;
+        }
+
+        .card {
+            margin: 2rem 1rem;
+            position: relative;
+            margin-left:auto;
+            margin-right: auto;
+            border-radius: $border-radius-small;
+            overflow: hidden;
+            border:none;
+            background-color: $color-gray-3;
+            height:auto;
+            width: 80vw;
+
+            @include md {
+                height:auto;
+                width: auto;
+                margin:0 1rem;
+            }
+
+            &:hover {
+                .card-pop-up{
+                    @include lg {
+                        height: 100%;
+                    } 
+
+                    .card-pop-up-info {
+                        @include lg {
+                            top:55%;
+                        }
+                    }
+                }
+
+                .options-availability {
+                    @include lg {
+                        right:1rem;
+                    }
+                }
+            }
+
+            .card-background {
+
+                img {
+                    width: 100%;
+    
+                    @include md{
+                        height: 100%;
+                    }
+
+                    @include lg {
+                        height: 100%;
+                    }
+                }
+
+                @include md{
+                    height:28vw;
+                }
+            }
+
+            // pop up
+            .card-pop-up {
+                position:relative;
+                background-color: $color-theme-dark;
+                bottom: 0;
+                height: 30%;
+                width: 100%;
+                transition: height 300ms ease-in-out;
+
+                @include lg {
+                    position:absolute;
+                    height: 12%;
+                    opacity: 90%;
+                    transition: height 300ms ease-in-out;
+                }
+    
+                // pop up info
+                .card-pop-up-info{
+                    display:grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-rows: auto;
+                    gap: 0.4rem;
+                    color: $color-white;
+
+                    @include lg {
+                        position: relative;
+                        top:0;
+                        transition: top 300ms ease-in-out;
+                        gap:0;
+                    }
+    
+                    h4 {
+                        grid-column: 1 / -1;
+                        grid-row: 1 ;
+                        width: 100%;
+                        font-size: 1rem;
+                        font-weight: $font-weight-regular;
+                        margin-left: 1rem;
+                        margin-top: 1rem;
+
+                        @include lg {
+                            grid-column: 1 / span 3;
+                            grid-row: 1 ;
+                            font-size: $font-size-16;
+                            margin-top: 0.7rem;
+                        }
+                    }
+    
+                    p {
+                        margin:0.3rem 1rem;
+
+                        @include lg {
+                            margin-top: 0;
+                            margin-left: 1rem;
+                        }
+                    }
+    
+                    .original-price {
+                        grid-column: 3;
+                        grid-row: 1;
+                        font-size: 0.7rem;
+                        padding-top: 0.8rem;
+                        text-align: center;
+                        text-decoration: line-through;
+                        margin:auto;
+                        margin-bottom: -1rem;
+
+                        @include md {
+                            margin-left: -1rem;
+                            margin-bottom: -1.5rem;
+                        }
+
+                        @include lg {
+                            grid-column: 1;
+                            grid-row: 3;
+                            margin:auto;
+                            font-size: $font-size-14;
+                            text-align: left;
+                            text-decoration: line-through;
+                            padding-top:0.5rem;
+                            padding-bottom: 0;
+                        }
+
+                    }
+    
+                    .disscount-price {
+                        grid-column: 3;
+                        grid-row: 2;
+                        color: $color-theme;
+                        font-size: $font-size-16;
+                        margin:auto;
+
+                        @include md {
+                            grid-column: 2 /span 2;
+                            grid-row: 2 / -1;
+                        }
+
+                        @include lg {
+                            grid-column: 1;
+                            grid-row: 4;
+                            margin-top: 0rem;
+                            text-align: left;
+                        }
+                    }
+
+                    .b-label {
+                        grid-column: 1;
+                        grid-row: 2;
+                        font-family: $font-roboto;
+                        font-size: 0.8rem;
+                        font-weight: $font-weight-regular;
+                        border: 1px $color-white solid;
+                        background-color: $color-theme-dark;
+                        color: $color-white;
+                        padding: 0.2rem 1rem;
+                        margin:1rem;
+                        transition: background-color 300ms , color 300ms;
+                    
+                        &:hover{
+                            border: 1px $color-theme solid;
+                            color: $color-theme;
+                        }
+
+                        @include md {
+                            grid-column: 1;
+                            grid-row: 2;
+                        }
+
+                        @include lg {
+                            grid-column: 1;
+                            grid-row: 2;
+                            margin-top: 0.7rem;
+                            font-size: $font-size-14;
+                            margin-left: 1rem;
+                            margin-bottom: 0;
+                        }
+                    }
+    
+                    // featured star rating
+                    .featured-star-rating {
+                        grid-column: 2;
+                        grid-row:2;
+                        margin:auto;
+                        font-size: 0.5rem;
+                        color: $color-theme;
+                        text-align: center;
+
+                        @include md {
+                            position: absolute;
+                            top:-1.5rem;
+                            right: 1rem;
+                        }
+
+                        @include lg {
+                            position: static;
+                            grid-column: 3;
+                            grid-row: 4;
+                            height:2rem; 
+                        }
+                    
+                    }
+                }
+            }
+
+            .options-availability {
+                position: absolute;
+                background-color:$color-white;
+                border: 1px $color-gray-2 solid;
+                top:1rem;
+                right:1rem;
+                list-style-type: none;
+                padding:0.7rem 0.3rem;
+                border-radius: $border-radius-meduim;
+
+                @include lg {
+                    position: absolute;
+                    top:1rem;
+                    right: -5rem;
+                    padding:0.7rem 0.3rem;
+                    border-radius: $border-radius-meduim;
+                    transition: right 500ms ease-in-out;
+                }
+
+                a {
+                    text-decoration: none;
+
+                    color: $color-theme-dark;
+
+                    &:hover {
+                        color: $color-theme;
+                    }
+                }
+
+                li {
+                    margin: 0.3rem;
+                }
+
+                .available {
+                    color: $color-product-instock;
+                }
+
+                .not-available {
+                    color: $color-product-outofstock;
+                }
+            }
+        }
+    }
+}

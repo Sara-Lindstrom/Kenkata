@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"defer></script>
     <script src="script.js"defer></script>
-    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/style.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -18,30 +18,27 @@
             <!-- bootstrap container for a more responsive website -->
             <div class="container"> 
                 <!-- Left side dropdown -->
-                <div class="flex">
-                    <div class="dropdown-theme">
-                        <div class="dropdown">
-                            <!-- bropdown from bootstrap -->
-                            <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span id="selected language">ENG</span><i class="fa-solid fa-chevron-down ms-1"></i>
-                            </button>
-                            <ul id="language-menu" class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">ENG</a></li>
-                                <li><a class="dropdown-item" href="#">SWE</a></li>
-                            </ul>
-                        </div>
+                <div class="d-flex">
+                    <div class="dropdown">
+                        <!-- bropdown from bootstrap -->
+                        <button class="b-dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span id="selected language">ENG</span><i class="fa-solid fa-chevron-down ms-1"></i>
+                        </button>
+                        <ul id="language-menu" class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">ENG</a></li>
+                            <li><a class="dropdown-item" href="#">SWE</a></li>
+                        </ul>
                     </div>
-                    <div class="dropdown-theme">
-                        <div class="dropdown">    
-                            <!-- dropdown from bootstrap -->
-                            <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span id="selected currency">EUR</span><i class="fa-solid fa-chevron-down ms-1"></i>
-                            </button>
-                            <ul id="currency-menu" class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">EUR</a></li>
-                                <li><a class="dropdown-item" href="#">SEK</a></li>
-                            </ul>
-                        </div>
+
+                    <div class="dropdown">    
+                        <!-- dropdown from bootstrap -->
+                        <button class="b-dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span id="selected currency">EUR</span><i class="fa-solid fa-chevron-down ms-1"></i>
+                        </button>
+                        <ul id="currency-menu" class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">EUR</a></li>
+                            <li><a class="dropdown-item" href="#">SEK</a></li>
+                        </ul>
                     </div>
                 </div>
 
@@ -77,13 +74,13 @@
                 <div class="search">
                     <form id="searchForm">
                         <input id="searchbar" type="text" placeholder="Search products...">
-                        <button type="submit"><i class="fa-regular fa-magnifying-glass"></i></button>
+                        <button class="button b-theme" type="submit"><i class="fa-regular fa-magnifying-glass"></i></button>
                     </form>
                 </div>
 
                 <!-- my account -->
                 <div class="my-account">
-                    <a href="./form.html"><i class="fa-regular fa-user"></i><div class="hidden-text">My account</div></a>
+                    <a href="./login.html"><i class="fa-regular fa-user"></i><div class="hidden-text">My account</div></a>
                     <a href="#"><i class="fa-regular fa-heart"></i></a>
                     <a href="#"><i class="fa-regular fa-shuffle"></i></a>
                     <a href="#">
@@ -99,22 +96,18 @@
         <!-- browser, special offers -->
         <div class="top-under-menu">
             <div class="container">
-                <div class="browse-categories">
-                    <div class="dropdown-theme">
-                        <div class="dropdown">
-                            <!-- dropdown from bootstrap -->
-                            <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa-regular fa-bars me-md-3"></i><div class="hidden-text">Browse categories<i class="fa-solid fa-chevron-down ms-1 ms-md-3"></i>
-                            </button>
-                            <ul id="browse-menu" class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Men</a></li>
-                                <li><a class="dropdown-item" href="#">Women</a></li>
-                                <li><a class="dropdown-item" href="#">Children</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="dropdown">
+                    <!-- dropdown from bootstrap -->
+                    <button class="b-dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-bars me-md-3"></i><div class="hidden-text">Browse categories<i class="fa-solid fa-chevron-down ms-1 ms-md-3"></i>
+                    </button>
+                    <ul id="browse-menu" class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Men</a></li>
+                        <li><a class="dropdown-item" href="#">Women</a></li>
+                        <li><a class="dropdown-item" href="#">Children</a></li>
+                    </ul>
                 </div>
-            <button class="button button-theme">SPECIAL OFFER</button>
+            <button class="button b-theme">SPECIAL OFFER</button>
             </div>
         </div>
     </header>
@@ -126,7 +119,7 @@
                 <div class="showcase-title">
                     <h1 class="shopping-is">Shopping&nbsp;is <br><strong>MORE&nbsp;FUN</strong></h1> 
                     <div class="hidden-text"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure necessitatibus ducimus blanditiis quae? Inventore debitis sunt facere?</p></div>                
-                    <a href="#" class="button button-theme">SHOP NOW</a>
+                    <a href="#" class="button b-light">SHOP NOW</a>
                 </div>
                 <img src="../img/showcase.svg" alt="siluette of two people standing">
             </div>
@@ -214,7 +207,7 @@
                     <div class="card-pop-up">
                         <div class="card-pop-up-info">
                             <h4>Blue silk flare sleeve top</h4>
-                            <button>Fashion</button>
+                            <button class="b-label">Fashion</button>
                             <p class="original-price">£30.00</p>
                             <p class ="disscount-price">£15.00</p>
                         </div>
@@ -238,7 +231,7 @@
                     <div class="card-pop-up">
                         <div class="card-pop-up-info">
                             <h4>New look men's coat</h4>
-                            <button>Fashion</button>
+                            <button class="b-label">Fashion</button>
                             <p class="original-price">£50.00</p>
                             <p class ="disscount-price">£20.00</p>
                         </div>
@@ -262,7 +255,7 @@
                     <div class="card-pop-up">
                         <div class="card-pop-up-info">
                             <h4>circle pattern girls shirt</h4>
-                            <button>Fashion</button>
+                            <button class="b-label">Fashion</button>
                             <p class="original-price">£40.00</p>
                             <p class ="disscount-price">£17.00</p>
                         </div>
@@ -287,12 +280,12 @@
                     <div class="green-band-info">
                         <h6>30%&nbsp<span>OFF</span></h6>
                         <p>FOR NEW CUSTOMERS</p>
-                        <button>SHOP NOW</button>                        
+                        <button class="button b-dark" >SHOP NOW</button>                        
                     </div>
                 </div>
                 <div class="banner-info">
                     <p class="hidden-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem asperiores excepturi nesciunt possimus aperiam, dolores impedit officia voluptatem temporibus. Itaque esse quod illum cupiditate! Saepe eum tenetur cupiditate molestias facere sunt et placeat debitis? Illo autem excepturi ducimus vel similique sapiente nemo aliquid, incidunt consectetur nulla, expedita, et architecto illum!</p>
-                    <a href="#"><button>LEARN MORE</button></a>                
+                    <a href="#"><button class="button b-light" >LEARN MORE</button></a>                
                 </div>                
             </div>
         </div>
@@ -319,7 +312,7 @@
                     <div class="card-pop-up">
                         <div class="card-pop-up-info">
                             <h4>Winter collection for women</h4>
-                            <button>Fashion</button>
+                            <button class="b-label">Fashion</button>
                             <p class="original-price">£50.00</p>
                             <p class ="disscount-price">£35.00</p>
                             <div class="featured-star-rating">
@@ -350,7 +343,7 @@
                     <div class="card-pop-up">
                         <div class="card-pop-up-info">
                             <h4>New look men's coat</h4>
-                            <button>Fashion</button>
+                            <button class="b-label">Fashion</button>
                             <p class="original-price">£50.00</p>
                             <p class ="disscount-price">£20.00</p>
                             <div class="featured-star-rating">
@@ -381,7 +374,7 @@
                     <div class="card-pop-up">
                         <div class="card-pop-up-info">
                             <h4>red women's blazer full</h4>
-                            <button>Fashion</button>
+                            <button class="b-label">Fashion</button>
                             <p class="original-price">£25.00</p>
                             <p class ="disscount-price">£13.00</p>
                             <div class="featured-star-rating">
@@ -412,13 +405,15 @@
                     <h4>FLASH <br> SALE</h4>
                     <p>UP TO 50% OFF</p>
                 </div>
-                <div class="count-down">
-                    <div class="circle-box"><p class="time">7</p><p>Days</p></div>
-                    <div class="circle-box"><p class="time">23</p><p>Hours</p></div>
-                    <div class="circle-box"><p class="time">46</p><p>Minutes</p></div>
-                    <div class="circle-box"><p class="time">12</p><p>Seconds</p></div>
-                    <a href="#"><button class="shop-now">SHOP NOW</button></a>
-                </div> 
+                <div class="box">
+                    <div class="count-down">
+                        <div class="circle-box"><p class="time">7</p><p>Days</p></div>
+                        <div class="circle-box"><p class="time">23</p><p>Hours</p></div>
+                        <div class="circle-box"><p class="time">46</p><p>Minutes</p></div>
+                        <div class="circle-box"><p class="time">12</p><p>Seconds</p></div>
+                    </div> 
+                    <a href="#"><button class="button b-light">SHOP NOW</button></a>
+                </div>
             </div>
         </div>
 
@@ -442,7 +437,7 @@
                     <div class="card-pop-up">
                         <div class="card-pop-up-info">
                             <h4>men's denim shirt full</h4>
-                            <button>Fashion</button>
+                            <button class="b-label">Fashion</button>
                             <p class="original-price">£50.00</p>
                             <p class ="disscount-price">£20.00</p>
                             <div class="featured-star-rating">
@@ -473,7 +468,7 @@
                     <div class="card-pop-up">
                         <div class="card-pop-up-info">
                             <h4>women's lether bag and shoes</h4>
-                            <button>accessories</button>
+                            <button class="b-label">accessories</button>
                             <p class="original-price">£50.00</p>
                             <p class ="disscount-price">£20.00</p>
                             <div class="featured-star-rating">
@@ -504,7 +499,7 @@
                     <div class="card-pop-up">
                         <div class="card-pop-up-info">
                             <h4>new look men's sneakers</h4>
-                            <button>shoes</button>
+                            <button class="b-label">shoes</button>
                             <p class="original-price">£50.00</p>
                             <p class ="disscount-price">£20.00</p>
                             <div class="featured-star-rating">
@@ -530,7 +525,7 @@
 
         <!-- subscribe banner -->
         <div class="subscribe-banner">
-            <div class="container">
+            <div class="container lg-d-flex">
                 <div class="subscribe-info">
                     <h6>SUBSCRIBE <span>NOW</span></h6>
                     <p>Signup for awesome news about our new products and know our discount on products.</p>
@@ -539,7 +534,7 @@
                     <div class="subscribe">
                         <form id="subscribeForm">
                             <input id="subscribeInput" type="text" placeholder="Enter email adress">
-                            <button type="submit">Subscribe</button>
+                            <button class="button b-theme" type="submit">Subscribe</button>
                         </form>
                             <!-- placeholder for error message -->
                             <div class="error-message"></div>
