@@ -431,7 +431,7 @@ https://stackoverflow.com/questions/22352618/css-before-after-content-with-title
 
 /* new arrivals and featured products */
 /* card*/
-.card-container .cardrow {
+.container-fluid .cardrow {
     display:block;
 }
 
@@ -916,9 +916,6 @@ https://stackoverflow.com/questions/22352618/css-before-after-content-with-title
 /* shop by category grid */
 .shop-by-category .container .grid-container {
     grid-template-rows: repeat(3, 100px);
-}
-
-.shop-by-category .container .grid-container {
     padding-top: 2rem;
     margin-bottom: 2rem;
 }
@@ -1090,7 +1087,7 @@ https://stackoverflow.com/questions/22352618/css-before-after-content-with-title
 }
 
 .container-fluid .top-sellers .top-seller-grid-vertical .card-background{
-    height:100%
+    height:100%;
 }
 
 .container-fluid .top-sellers .top-seller-grid-vertical img {
@@ -1112,7 +1109,7 @@ https://stackoverflow.com/questions/22352618/css-before-after-content-with-title
 }
 
 .container-fluid .top-sellers .top-seller-grid-top .card-background{
-    height:100%
+    height:100%;
 }
 
 .container-fluid .top-sellers .top-seller-grid-top img {
@@ -1131,7 +1128,7 @@ https://stackoverflow.com/questions/22352618/css-before-after-content-with-title
 }
 
 .container-fluid .top-sellers .top-seller-grid-bottom .card-background{
-    height:100%
+    height:100%;
 }
 
 .container-fluid .top-sellers .top-seller-grid-bottom img {
