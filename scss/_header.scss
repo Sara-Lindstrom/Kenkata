@@ -1,0 +1,187 @@
+
+/* GREEN BANNER TOP MENU */
+.top-menu {
+    background-color: $color-theme;
+    color:$color-white;
+
+    .container {
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        padding:0.7rem;
+
+        @include md {
+            padding: none;
+        }
+    } 
+
+    a {
+        color:$color-white;
+        margin-right: 1.2rem;         
+
+        &:hover {
+            color: $color-theme-dark;
+        }
+    }
+
+    .social-media a {
+        margin-right:0.3rem;
+        padding-right: 0.5rem;
+    }
+}
+
+/* LOGO, SEARCH, MY ACCOUNT*/
+.top-main-menu{
+    background-color: $color-white;
+    color:$color-theme-dark;
+
+    .container {
+        display: flex;
+        justify-content:space-between;
+        padding:2rem 0.7rem;
+        margin-bottom: 2rem;
+        position: relative;
+
+        @include lg {       
+        margin-bottom: 0;
+        }
+
+        // logo
+        .logotype img{
+            transition: transform 300ms;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        // Searchbar
+        .search {
+            position: absolute;
+            left:auto;
+            top:5rem;
+            border-radius:$border-radius-meduim;
+            width: 95%;
+            max-width: 40rem;
+            height:2rem;
+
+            @include md {
+                width: 100%;
+            }
+            @include lg {
+                position: relative;
+                top:0;
+                width: 35vw;
+            }
+
+            input {
+                position: absolute;
+                width: 100%;
+                min-height: 100%;
+                border-radius:$border-radius-meduim;
+                outline: none;
+                border: 1px $color-gray-2 solid;
+                padding-left: 1.3rem;
+
+                @include lg {
+                    position: absolute;
+                    left:0;
+                    width: 100%;
+                }
+            }
+
+            button {
+                position: absolute;
+                right: -0.1rem;
+                height: 100%;
+                border: none;
+                background-color: $color-theme;
+                color: $color-white;
+                border-radius: 0 $border-radius-meduim $border-radius-meduim 0;
+                transition: color 300ms;
+                padding:0 2rem;
+
+                &:hover {
+                    color: var(--color-theme-dark);
+                }
+            }
+        }
+
+        // my account
+        .my-account {
+            
+            a {
+            color:$color-theme-dark;
+            text-decoration: none;
+            margin-left: 0.5rem;
+            position: relative;
+
+                &:hover {
+                    color:$color-theme;
+
+                    span {
+                        color: $color-theme-dark;
+                    }
+                }
+            }
+
+            i {
+                padding-right: 0.7rem;
+            }
+
+            span {
+                position:absolute;
+                top:-1.2rem;
+                left:0;
+                background: $color-theme;
+                transition: all 500ms;
+
+                @include lg {
+                    top:-1rem;
+                    left:0.7rem;
+                    transition: all 500ms;
+                }
+
+                @include md {
+                    top:-1rem;
+                    left:0.7rem;
+                }
+            }
+        }
+    }
+}
+
+/* browser, special offers */
+.top-under-menu {
+    border-top: 0.1rem $color-gray-3 solid ;
+
+    .container {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .dropdown {
+            background-color: $color-theme;
+            padding:0.2rem;
+            border-radius: $border-radius-small;
+    
+            @include md {
+                border-radius: 0;
+            }
+
+            .b-dropdown {
+                border-radius: $border-radius-small;
+                padding:0.5rem;
+
+                @include md {
+                    border-radius: 0;
+                }
+            }
+
+        }
+
+        .button-theme {
+            margin:none;
+        }
+    }
+}

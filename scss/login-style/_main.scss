@@ -1,0 +1,212 @@
+// LOCATION BAR
+.location-bar {
+    background-color: #4c526b;
+    color:$color-white;
+    font-size: 1rem;
+
+    .container {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include md {
+            padding: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: $color-white;
+
+            &:hover {
+                color:$color-dark;
+                text-decoration: none;
+            }
+        }
+
+        .home{
+            color:$color-theme;
+
+            &:hover {
+                color: $color-dark;
+            }
+        }
+    }
+
+    .my-account{
+        font-size: $font-size-16;
+        color:$color-theme;
+        padding:1rem 0;
+
+        @include md {
+            padding: 2rem 0;
+        }
+    }
+}
+
+// LOGIN AND REGISTRATION
+.login-registration-container {
+
+    @include lg {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 1rem;
+    }
+
+    .form-link {
+        text-decoration: none;
+        color: $color-theme;
+
+        &:hover {
+            color: $color-theme-dark;
+            text-decoration: underline;
+        }
+    }
+
+    .form-theme {
+        background: $color-gray-4;
+        color:$color-theme-dark;
+        font-family: $font-roboto;
+        border-radius: $border-radius-small;
+        border: none;
+        margin: 1rem 0;
+        padding:2rem;
+        margin-top: 2rem;
+
+        @include lg {
+            grid-column: 1 / 2;
+            grid-row: 1/ span 1;
+        }
+
+        h2 {
+            font-size: $font-size-16;
+        }
+
+        p {
+            font-size: $font-size-14;
+            color: $color-theme-dark;
+            margin-top: 1rem;
+            margin-bottom: 0;
+
+            &.muted-text {
+                font-size: 0.8rem;
+                color: #777777;
+                margin-bottom: 1rem;
+            }        
+        }
+
+        // label and input
+        .label-theme {
+            font-size: $font-size-14;
+            color: $color-theme-dark;
+            margin-top: 1rem;
+        }
+
+        .input-theme {
+            border:$color-gray-2;
+            margin-bottom: 1rem;
+            width: 100%;
+            padding: 0.6rem 0.8rem;
+            color: $color-theme-dark;
+        }
+
+        // button
+        .button {
+            width: 100%;
+            margin: 1rem auto;
+        }
+
+        input:focus {
+            outline:none;
+            box-shadow: 0 0 0.2rem 0 $color-gray-0;
+        }
+
+        // login help
+        .login-help {
+            display:flex;
+            justify-content: space-between;
+            font-size: 0.7rem;
+
+            @include md {
+                font-size: 1rem;
+            }
+
+            .remember-me {
+                .checkbox{
+                    filter:brightness(97%);
+                    margin-right:0.5rem;
+                }
+
+                input[type=checkbox] {
+                    width: initial;
+                    color: $color-theme-dark;
+                }
+
+                label {
+                    margin:0;
+                    font-size: 0.7rem;
+
+                    @include md {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+        // Or login with
+        .or-login-with{
+            display: flex;
+
+            h3 {
+                text-align: center;
+                font-size: $font-size-14;
+                flex: 1;
+                max-width: max-content;
+                margin: 2rem 1rem;
+            }
+
+            .line {
+                display:block;
+                background-color: $color-gray-0;
+                align-self: center;
+                border: 1px $color-gray-0 solid;
+                height: 1px;
+                flex: 1;
+            }
+        }
+
+        // social media links
+        .social-media-login{
+            display:flex;
+            justify-content: space-evenly;
+
+            img {
+                max-width: 10rem;
+                transition: transform 300ms;
+
+                @include md {
+                    max-width: fit-content;
+                }
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+    }
+
+    // register card decor grid
+    .card-vertical {
+        @include lg {
+            grid-column: 2/-1;
+            grid-row: 1/ span 2;
+        }
+    }
+
+    // error messae
+    .error-message {
+        margin: 1rem 0;
+        color: rgb(240, 138, 138)
+    }
+}
